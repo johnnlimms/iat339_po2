@@ -1,0 +1,359 @@
+html{ /*Prevents the content from shifting to the right by having the scroll bar show up all the time*/
+  overflow:scroll;
+}
+
+/*Changes the font family of the whole document*/
+body{
+  font-family: 'Avenir Next', sans-serif;
+}
+
+/*Centers the logo on top*/
+.logo{
+  margin-top: 5em;
+  margin: 0 auto;
+  max-width: 5em;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+/* Sets the margin for each section*/
+.tables{
+  margin: 3em 1em 1em 1em;
+}
+
+/*this sets the width and height of each navigation bar item*/
+.nav-item{
+  text-align: center; /*centers the navigation links in the div*/
+  line-height: 3em;
+  height: 3em;
+}
+
+.selected{ /*Displays the current page by highlighting the respective navigation link*/
+  padding: 5px;
+  font-weight: bold;
+  border-bottom: 2px solid #733A9C;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: #733A9C;
+}
+
+.nav-item a:hover{ /*puts a hover state on links on the navigation bar*/
+  color: #00AAE5;
+  padding: 5px;
+  border-bottom: 2px solid #00AAE5;
+}
+
+.nav-item a:focus{ /*Focus state of the navigation bar links*/
+  font-style: italic;
+  color: #0795C6;
+}
+/*Main title styling for each section*/
+.section-title{
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #00AAE5; /*Displays an underline after each section that spans the whole page*/
+  color: #00AAE5;
+  clear: both;
+}
+
+/*Labels for titles inside the sections*/
+.section_labels{
+  font-size: 1em;
+  color: #AAA;
+}
+
+/*Flexbox styling for the colour palette section*/
+.col_container div{
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+/*Flexbox styling for the typography section*/
+.type_container div{
+  margin: 1em;
+}
+
+/*Font + Typography combination for the elements in typography section*/
+.main_header{
+  margin: 0 0 16px 0;
+  display: block;
+  color: #733A9C;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/*Subheader styling*/
+.sub_header1{
+  margin: 0 0 16px 0;
+  display: block;
+  color: #0795C6;
+  font-size: 2em;
+}
+/*Second subheader styling*/
+.sub_header2{
+  margin: 0 0 16px 0;
+  display: block;
+  color: #0795C6;
+  font-size: 2em;
+  font-style: italic; /*It's italicized unlike the first subjeader*/
+}
+
+/*In-text link styling*/
+.in-text{
+  line-height: 1.7em;
+  text-decoration: none; /*removes default hyperlink underline*/
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #733A9C;
+}
+
+/*Hover state for in-text link*/
+.in-text:hover{
+  color: #00AAE5;
+  font-style: italic;
+}
+
+/*Paragraph style*/
+.body-type{
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.8em;
+}
+
+
+/*Style for sample code*/
+.sample_code{
+  color: #888888;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding: 1em;
+  background: #EDF1F7;
+}
+
+.col_code{
+  margin-top: 2em;
+}
+
+
+/*Ordered list styling*/
+.numbered_list li{
+  line-height: 2em;
+  font-weight: bold;
+  color: #0795C6;
+}
+
+/*Unordered list styling*/
+.bulleted_list li{
+  list-style-type: circle;
+  line-height: 2em;
+  font-weight: bold;
+  color: #0795C6;
+}
+
+/*Submit button styling*/
+.submit{
+  margin-bottom: 16px;
+  display: inline;
+  font-size: 1em;
+  padding: 1em 2em 1em 2em;
+  font-weight: bold;
+  background: linear-gradient(45deg, #9C74B8, #4AC2EA);
+  color: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 10px; /*Makes the enclosing borders have rounded edges*/
+}
+
+.submit:hover{
+  background: transparent; /*Makes background transparent to match background element*/
+  color: #733A9C;
+  border: 2px solid #733A9C;
+}
+
+/*Reset button styling*/
+.reset{
+  margin-bottom: 16px;
+  display: inline;
+  font-size: 1em;
+  padding: 1em 2em 1em 2em;
+  font-weight: bold;
+  background: transparent;
+  color: #D7263D;
+  border: 2px solid #D7263D;
+  border-radius: 10px;
+}
+
+/*Hover state for reset button*/
+.reset:hover{
+  background: #D7263D;
+  color: #FFF;
+  border: 2px solid #D7263D;
+}
+
+/*Cancel button*/
+.cancel{
+  margin-bottom: 16px;
+  display: inline;
+  font-size: 1em;
+  padding: 1em 2em 1em 2em;
+  font-weight: bold;
+  background: #C55C69;
+  color: #FFFFFF;
+  border: 2px solid #C55C69;
+  border-radius: 10px;
+}
+
+/*CAncel button hover state*/
+.cancel:hover{
+  background: #FFFFFF;
+  color: #C55C69;
+  border: 2px solid #C55C69;
+}
+
+/*Styling for the molecular div for forms and buttons*/
+.button_element2{
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid #DDDDDD;
+  border-radius: 0.5em;
+}
+
+/*Styling for the form label/name*/
+.form_label{
+  margin: 1em 0 0.5em 0;
+  color: #733A9C;
+}
+/*Textfield styling*/
+.textfield{
+  width: 70%; /*Makes the textfield 70% of the div wide */
+  padding: 1em;
+  border: 2px solid #DDDDDD;
+  border-radius: 4px;
+  color: #0795C6;
+}
+
+.textfield:focus{
+  border: 2px solid #0795C6;
+}
+
+
+
+.textfield::placeholder{
+  color: #DDDDDD;
+}
+
+
+/*Positions the molecular buttons in the molecular form*/
+.control_buttons{
+  margin: 1em 0 0 0;
+}
+
+/*determines the icon sizes under the services table*/
+.service_img{
+  display: block;
+  margin: 0 auto; /*centers each image in the div*/
+  max-width: 150px;
+}
+
+/*Creates a lable for each icon*/
+.service_label{
+  margin: 1em 0 0.5em 0;
+  color: #9C74B8;
+  text-align: center;
+}
+
+
+/*Contains all the website grids*/
+.grid_container{
+  margin-bottom: 1em;
+}
+
+/*light coloured grid box for 5-column grid*/
+.light_1of5{
+  height:100px;
+  background: #4AC2EA;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+/*darker coloured grid box for 5-column grid*/
+.dark_1of5{
+  height:100px;
+  background: #9C74B8;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/*light coloured grid box for 3-column grid*/
+.light_1of3{
+  height:100px;
+  background: #4AC2EA;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/*dark coloured grid box for 3-column grid*/
+.dark_1of3{
+  height:100px;
+  background: #9C74B8;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+.wireframes_sketch{
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*================================================================*/
+
+/*COLORS*/
+/*RED*/
+.primary1{
+  background: #733A9C;
+}
+
+.primary2{
+  background: #9C74B8;
+}
+
+.primary3{
+  background: #b38cce;
+}
+
+/*GREEN*/
+.secondary1{
+  background: #00AAE5;
+}
+
+.secondary2{
+  background: #4AC2EA;
+}
+
+.secondary3{
+  background: #0795C6;
+}
+/*ORANGE*/
+.accent1{
+  background: linear-gradient(45deg, #733A9C, #00AAE5);
+}
+
+.accent2{
+  background: linear-gradient(45deg, #9C74B8, #4AC2EA);
+}
+
+.accent3{
+  background: #EDF1F7;
+}
