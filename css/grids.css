@@ -7,6 +7,27 @@
   flex-wrap: wrap;
 }
 
+.renderedNav{
+  display: flex;
+  align-items: baseline;
+}
+
+.renderedNav .nav_container{
+  flex-wrap: nowrap;
+  flex-grow: 2;
+  margin-left: 9em;
+  margin-right: 9em;
+  flex-direction: row;
+}
+.renderedNav .nav_container .nav-item{
+
+}
+.icon{
+  flex-grow: 1;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 .nav-item{
   flex: 15em;
   flex-grow: 1;
