@@ -195,6 +195,7 @@ body{
 
 /*Reset button styling*/
 .reset{
+  background: transparent;
   margin-bottom: 0.6em;
   display: inline;
   letter-spacing: 0.04em;
@@ -208,12 +209,14 @@ body{
 
 /*Hover state for reset button*/
 .reset:hover{
+  background: transparent;
   color: #9C74B8;
   border-bottom: 2px solid #9C74B8;
 }
 
 /*Cancel button*/
 .cancel{
+  background: transparent;
   margin-bottom: 0.6em;
   display: inline;
   letter-spacing: 0.04em;
@@ -227,6 +230,7 @@ body{
 
 /*CAncel button hover state*/
 .cancel:hover{
+  background: transparent;
   background: #FFFFFF;
   color: #9C74B8;
   border: 2px solid #9C74B8;
