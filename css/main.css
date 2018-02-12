@@ -166,11 +166,18 @@ body{
   color: #333333;
 }
 
+.renderedNav{
+  background: rgba(255, 255, 255, 30%);
+  position: fixed;
+  width: 100%;
+}
+
 .renderedNav .logo{
-  margin: 0;
+  margin: 0 auto;
   max-width: 15em;
   width: 100%;
 }
+
 
 /*Submit button styling*/
 .submit{
