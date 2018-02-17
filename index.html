@@ -7,89 +7,44 @@
       Hyperloop One Booking System
     </title>
     <!--stylesheets linked to this HTML page-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/grids.css">
+    <link rel="stylesheet" href="css/grids2.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <section class = "tables">
-      <section class="renderedNav">
-        <img class = "logo" src="img/hyperloop.png" alt ="Coast Logo">
-        <div class = "nav_container">
-          <div class = "nav-item">
-            <a href="#">Book a Trip</a>
-          </div>
-          <div class = "nav-item">
-            <a href="#">Find Platform</a>
-          </div>
-          <div class = "nav-item">
-            <a href="#">About</a>
-          </div>
+
+    <!--HEADER/NAVIGATION MENU-->
+    <section class="renderedNav">
+      <div class = "nav_container">
+        <div class = "logo_cont">
+          <img class = "logo" src="img/hyperloop_logo.png" alt ="Coast Logo">
         </div>
-        <div class="icons">
-          <img class="icon" src="img/search.png" alt ="Search Icon">
-          <img class="icon" src="img/signin.png" alt ="Signin Icon">
+        <div class = "nav-item">
+          <a class "selected" href="#">Book a Trip</a>
         </div>
-      </section>
+        <div class = "nav-item">
+          <a href="#">Find Platform</a>
+        </div>
+        <div class = "nav-item">
+          <a href="#">About</a>
+        </div>
+
+        <div class ="nav-item">
+          <i class="material-icons purple600">person_outline</i>
+          <a href ="#">Sign In</a>
+        </div>
+      </div>
     </section>
 
-    <section class = "tables">
-      <h2 class ="section-title"> <!--section title-->
-        Colour Palette
-      </h2>
-      <h3 class ="section_labels"> Primary </h3> <!--labels for each section-->
-
-      <!--PRIMARY COLORS-->
-      <div class = "col_container">
-        <div class ="primary1">
-          <p>#733A9C</p>
-        </div>
-
-        <div class ="primary2">
-          <p>#9C74B8</p>
-        </div>
-
-        <div class ="primary3">
-          <p>#B38CCE</p>
-        </div>
+    <footer>
+      <div class = "myFooter">
+        <a class ="footer-items" href = "#">Home</a>
+        <a class ="footer-items" href = "#">Citations</a>
+        <a class ="footer-items" href = "#">Styleguide</a>
+        <a class ="footer-items" href = "#">Github</a>
       </div>
-
-      <!--SECONDARY COLORS-->
-      <h3 class ="section_labels"> Secondary </h3>
-      <div class = "col_container">
-        <div class ="secondary1">
-          <p>#00AAE5</p>
-        </div>
-
-        <div class ="secondary2">
-          <p>#4AC2EA</p>
-        </div>
-
-        <div class ="secondary3">
-          <p>#9ADDF4</p>
-        </div>
-      </div>
-
-      <!--ACCENT COLORS-->
-      <h3 class ="section_labels"> Accents </h3>
-      <div class = "col_container">
-        <div class ="accent1">
-          <p>Gradient 1</p>
-        </div>
-
-        <div class ="accent2">
-          <p>Gradient 2</p>
-        </div>
-
-        <div class ="accent3">
-          <p>#EDF1F7</p>
-        </div>
-      </div>
-
-      <div class = "col_code">
-        <!--Sample code-->
-        <code class = "sample_code"> &lt;div class = "primary1"&gt;&lt;p&gt;#D7263D&lt;/p&gt;&lt;/div&gt; || <strong>CSS Selector</strong> .primary1 .primary2 .primary3 .secondary1 .secondary2 .secondary3 .accent1 .accent2 .accent3</code>
-      </div>
-    </section> <!--end of Color Palette Section-->
+    </footer>
   </body>
 </html>

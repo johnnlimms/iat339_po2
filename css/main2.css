@@ -1,0 +1,114 @@
+
+
+html{ /*Prevents the content from shifting to the right by having the scroll bar show up all the time*/
+  overflow:scroll;
+}
+
+/*Changes the font family of the whole document*/
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+.renderedNav{
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  width: 100%;
+}
+
+.nav_container{
+  padding: 1em;
+  align-items: center;
+  text-align: center;
+}
+
+.nav_container .logo_cont{
+  text-align: left;
+}
+
+.logo_cont{
+  min-width: 25%;
+}
+
+
+.renderedNav .logo{
+  margin: 0 auto;
+  max-width: 15em;
+  width: 100%;
+}
+
+
+
+.nav-item a{
+  color: #333333;
+  line-height: 5em;
+  height: 3em;
+  text-decoration: none;
+}
+
+
+.nav-item a:hover{ /*puts a hover state on links on the navigation bar*/
+  border-bottom: 0.1em solid #333333;
+}
+
+.nav-item a:focus{ /*Focus state of the navigation bar links*/
+  border-bottom: 0.1em solid #333333;
+}
+
+.selected{
+
+}
+
+.myFooter{
+  background: #DDDDDD;
+  position: fixed;
+  margin-top: 2%;
+  height: 3em;
+  line-height: 3em;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  bottom: 0;
+}
+
+.footer-items{
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #333333;
+  padding: 1em;
+}
+
+.footer-items:hover{
+  -webkit-transition: 0.2s ease-in;
+  color: #999999;
+}
+
+
+/*===========FONTS===============*/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 2em;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.purple600 {
+  color: #733A9C;
+}
