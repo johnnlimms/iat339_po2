@@ -1,5 +1,3 @@
-
-
 html{ /*Prevents the content from shifting to the right by having the scroll bar show up all the time*/
   overflow:scroll;
 }
@@ -9,10 +7,11 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
-.renderedNav{
+header{
   background: rgba(255, 255, 255, 0.7);
-  position: fixed;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .nav_container{
@@ -31,12 +30,11 @@ body{
 
 
 .renderedNav .logo{
+  .position: fixed;
   margin: 0 auto;
   max-width: 15em;
   width: 100%;
 }
-
-
 
 .nav-item a{
   color: #333333;
@@ -52,10 +50,6 @@ body{
 
 .nav-item a:focus{ /*Focus state of the navigation bar links*/
   border-bottom: 0.1em solid #333333;
-}
-
-.selected{
-
 }
 
 .myFooter{
@@ -80,6 +74,97 @@ body{
 .footer-items:hover{
   -webkit-transition: 0.2s ease-in;
   color: #999999;
+}
+
+
+.button_element2{
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid #DDDDDD;
+  border-radius: 0.5em;
+}
+
+.form_table{
+  margin-left: 5%;
+  padding: 2em;
+  max-width: 40%;
+  background: rgba(255,255,255,0.9);
+  border-radius: 0.5em;
+}
+
+.table{
+  padding: 1em;
+  background-image: url('../img/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.myDatePicker{
+  margin-left: 5%;
+  max-width: 100%;
+  font-size: 1.2em;
+}
+
+
+.myDatePicker label{
+  display: block;
+}
+
+.city_picker{
+  margin-bottom: 1.5em;
+}
+.date_picker{
+  margin-bottom: 1.5em;
+}
+
+.myDatePicker select{
+  width: 100%;
+  display: block;
+  height: 2.4em;
+  text-align: center;
+  margin: 1em 0 0.5em 0;
+  border: 2px solid #DDDDDD;
+  border-radius: 5px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #733A9C;
+  background: white;
+}
+
+.myDatePicker input{
+  background: white;
+  width: 100%;
+  display: block;
+  height: 2em;
+  text-align: center;
+  margin: 1em 0 0.5em 0;
+  border: 2px solid #DDDDDD;
+  border-radius: 5px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #733A9C;
+}
+
+
+/*Submit button styling*/
+.submit{
+  margin-bottom: 0.6em;
+  display: inline;
+  font-size: 1em;
+  letter-spacing: 0.04em;
+  padding: 0.8em 1.7em 0.8em 1.7em;
+  font-weight:500;
+  background: linear-gradient(45deg, #9C74B8, #4AC2EA);
+  color: #FFF;
+  border: none;
+  border: 0px solid transparent;
+  border-radius: 0.4em; /*Makes the enclosing borders have rounded edges*/
+}
+
+.submit:hover{
+  background: transparent; /*Makes background transparent to match background element*/
+  color: #733A9C;
+  border: 2px solid #733A9C;
 }
 
 
@@ -111,4 +196,34 @@ body{
 
 .material-icons.purple600 {
   color: #733A9C;
+}
+
+
+
+/*=====================MEDIA QUERIES=====================*/
+
+@media (max-width: 55em){
+  .nav_container{
+    display: inline-block;
+  }
+
+  .nav_container a{
+    display: inline-block;
+  }
+  .logo_cont{
+    display: inline-block;
+  }
+
+
+  .form_table{
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 42.5em){
+
+    .form_table{
+      max-width: 100%;
+      margin: 3em;
+    }
 }

@@ -255,6 +255,8 @@ body{
   letter-spacing: 0.02em;
   color: #733A9C;
 }
+
+
 /*Textfield styling*/
 .textfield{
   width: 70%; /*Makes the textfield 70% of the div wide */
