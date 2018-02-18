@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+*{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  letter-spacing: 0.04em;
+}
+
+a:-webkit-any-link{
+  cursor: pointer;
+}
+.nav-header{
+  width: 100%;
+  display: flex;
+  -webkit-display:flex;
+  -ms-display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap:flex;
+  -ms-flex-wrap: flex;
+
+  align-items: baseline;
+  margin-top: 1.5em;
+  margin-bottom: 4em;
+  position: relative;
+}
+.logo{
+  height: 1.85em;
+  width: auto;
+  position: absolute;
+  left: 9%;
+}
+.nav-image-signin{
+  height: 1.4em;
+  width: auto;
+  position: absolute;
+  right: 9%;
+}
+
+.progress-container{
+  width: 45em;
+  margin: auto;
+}
+.progressbar li{
+  font-size: 0.9em;
+  color: #808080;
+  list-style: none;
+  display: inline-block;
+  width: 16%;
+  position: relative;
+  text-align: center;
+}
+.progressbar li:before{
+  content: "";
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  border-radius: 100%;
+  display:block;
+  text-align: center;
+  border: 2px solid #9C74B8;
+  background-color: #fff;
+  margin: 0 auto 0.4em auto;
+}
+.progressbar li:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #808080;
+  top:0.7em;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after{
+  content: none;
+}
+.progressbar li.active{
+  color:#9C74B8;
+}
+.progressbar li.active:before{
+  background-color: #9C74B8;
+}
+.progressbar li.active + li.active:after{
+  height: 2px;
+  background-color: #9C74B8;
+}
+.progressbar-small{
+  display: none;
+}
+
+.words{
+  margin-left: 9%;
+  margin-top: 2em;
+}
+.words p{
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+h1{
+  font-size: 1.2em;
+}
+.progressbar-small h1{
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-top: 0.4em;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  background: linear-gradient(#733A9C, #00AAE5);
+  background: -webkit-linear-gradient(#733A9C, #00AAE5);
+  background: -ms-linear-gradient(#733A9C, #00AAE5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#colorblock{
+  display:block;
+  width: 82%;
+  margin: auto;
+  margin-top: 1.8em;
+  margin-bottom: 2em;
+  background-color: #EDF1F7;
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+}
+
+.ticket-detail{
+  display: flex;
+  padding: 2em 2em 0 2em;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
+  flex-wrap: wrap;
+}
+#arrowicon{
+  height: 0.6em;
+  width: auto;
+  padding: 0 1.2em;
+}
+.bigtext{
+  font-size: 1.15em;
+  font-weight: 800;
+  padding-bottom: 0.1em;
+}
+.smalltext{
+  font-size: 0.95em;
+  font-weight: 500;
+  padding-bottom: 0.1em;
+}
+.guest{
+  order: 0;
+}
+.class{
+  order: 4;
+}
+.date{
+  order: 2;
+}
+.time{
+  order:3;
+}
+
+.time{
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width:54em){
+  .progress-container{
+    display: none;
+  }
+  .progressbar-small{
+    display: block;
+    margin-left: 9%;
+  }
+  .progressbar-small h1{
+    margin: 0;
+  }
+  .words{
+    margin-top: 1.3em;
+  }
+  #colorblock{
+    margin-top: 1.2em;
+    min-width: 44em;
+  }
+}
+
+@media (max-width:44em){
+  .logo{
+    height: 1.4em;
+    left:5%;
+  }
+  .nav-image-signin{
+    height: 1.2em;
+    right:5%;
+  }
+  .nav-header{
+    margin-bottom: 3.2em;
+  }
+  .progressbar-small{
+    margin-left: 5%;
+  }
+
+  .words{
+    margin-left: 5%;
+  }
+
+  #colorblock{
+    width: 100%;
+    min-width: 2em;
+  }
+  .guest{
+    flex-basis: 50%;
+  }
+  .class{
+    order:1;
+    flex-basis: 50%;
+  }
+  .time{
+    margin-top: 1em;
+    flex-basis: 50%;
+  }
+  .date{
+    margin-top: 1em;
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width:27.5em){
+  .logo{
+    height:1.1em;
+  }
+  .nav-image-signin{
+    height: 1em;
+  }
+  .nav-header{
+    margin-bottom: 2.4em;
+  }
+
+}
