@@ -30,7 +30,6 @@ header{
 
 
 .renderedNav .logo{
-  .position: fixed;
   margin: 0 auto;
   max-width: 15em;
   width: 100%;
@@ -92,6 +91,19 @@ header{
   border-radius: 0.5em;
 }
 
+
+.form_title{
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.textfield_title{
+  font-size: 0.7em;
+}
+
 .table{
   padding: 1em;
   background-image: url('../img/bg-1.jpg');
@@ -110,21 +122,20 @@ header{
   display: block;
 }
 
-.city_picker{
+/* .city_picker{
   margin-bottom: 1.5em;
 }
 .date_picker{
   margin-bottom: 1.5em;
-}
+} */
 
 .myDatePicker select{
   width: 100%;
   display: block;
   height: 2.4em;
   text-align: center;
-  margin: 1em 0 0.5em 0;
-  border: 2px solid #DDDDDD;
-  border-radius: 5px;
+  margin: 0.3em 0 0.5em 0;
+  border-weight: 0px;
   font-weight: 300;
   letter-spacing: 0.02em;
   color: #733A9C;
@@ -137,7 +148,7 @@ header{
   display: block;
   height: 2em;
   text-align: center;
-  margin: 1em 0 0.5em 0;
+  margin: 0.3em 0 0.5em 0;
   border: 2px solid #DDDDDD;
   border-radius: 5px;
   font-weight: 300;
@@ -145,9 +156,10 @@ header{
   color: #733A9C;
 }
 
-
 /*Submit button styling*/
 .submit{
+  margin-top: 1em;
+  margin-left: 35%;
   margin-bottom: 0.6em;
   display: inline;
   font-size: 1em;
@@ -198,12 +210,51 @@ header{
   color: #733A9C;
 }
 
+/*Subheader styling*/
+.sub_header1{
+  margin: 0;
+  display: block;
+  color: #333333;
+  font-size: 1.5em;
+  font-weight: 600;
+}
 
+/*Paragraph style*/
+.body-type{
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.8em;
+  width: 38em;
+}
+
+.articles{
+  margin: 2em;
+  background: rgb(250,250,250);
+  padding: 3em;
+}
+
+.article_item1 img{
+  margin-left: 0 auto;
+  width: 90%;
+}
+
+.main_header{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #333333;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
 
 /*=====================MEDIA QUERIES=====================*/
 
 @media (max-width: 55em){
   .nav_container{
+    position: relative;
+    clear: left;
     display: inline-block;
   }
 
