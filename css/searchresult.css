@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+*{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  letter-spacing: 0.04em;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+a:-webkit-any-link{
+  cursor: pointer;
+}
+
+.nav-header{
+  width: 100%;
+  display: flex;
+  -webkit-display:flex;
+  -ms-display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap:flex;
+  -ms-flex-wrap: flex;
+
+  align-items: baseline;
+  margin-top: 1.5em;
+  margin-bottom: 4em;
+  position: relative;
+}
+.logo{
+  height: 1.85em;
+  width: auto;
+  position: absolute;
+  left: 9%;
+}
+.nav-image-signin{
+  height: 1.4em;
+  width: auto;
+  position: absolute;
+  right: 9%;
+}
+
+.progress-container{
+  width: 45em;
+  margin: auto;
+}
+.progressbar li{
+  font-size: 0.9em;
+  color: #808080;
+  list-style: none;
+  display: inline-block;
+  width: 16%;
+  position: relative;
+  text-align: center;
+}
+.progressbar li:before{
+  content: "";
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  border-radius: 100%;
+  display:block;
+  text-align: center;
+  border: 2px solid #9C74B8;
+  background-color: #fff;
+  margin: 0 auto 0.4em auto;
+}
+.progressbar li:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #808080;
+  top:0.7em;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after{
+  content: none;
+}
+.progressbar li.active{
+  color:#9C74B8;
+}
+.progressbar li.active:before{
+  background-color: #9C74B8;
+}
+.progressbar li.active + li.active:after{
+  height: 2px;
+  background-color: #9C74B8;
+}
+
+.progressbar-small{
+  display: none;
+}
+
+#colorblock{
+  display: block;
+  margin-top: 2.2em;
+  margin-bottom: 2em;
+  background-color: #EDF1F7;
+  align-items: center;
+  font-weight: 600;
+  height: 1.2em;
+  align-items: center;
+  padding: 1em;
+  position: relative;
+}
+.route{
+  display: inline-flex;
+  position: absolute;
+  left: 12.5%;
+  align-items: center;
+}
+#colorblock img{
+  height: 0.5em;
+  width: auto;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+#date{
+  display: inline-block;
+  position: absolute;
+  right: 12.5%;
+}
+
+.result-container{
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+.result{
+  width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  height: auto;
+}
+.overview{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schedule{
+  display: inline-flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.times{
+  padding: 1em;
+  display: inline-flex;
+  -webkit-display:flex;
+  -ms-display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.times img{
+  height: 0.5em;
+  width: auto;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+}
+
+.duration{
+  display: inline-block;
+  font-size: 0.9em;
+  flex-grow: 2;
+}
+
+.price-button{
+  display: inline-flex;
+  align-items: center;
+}
+.price{
+  display: inline-block;
+  padding: 1em;
+  padding-right: 0;
+}
+.button-show{
+  display: inline-block;
+  padding: 1em;
+}
+.button-show img{
+  height:0.9em;
+  width: auto;
+}
+.smalltext{
+  font-size: 0.8em;
+}
+.boldtext{
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.hidden-div{
+  display: flex;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 1em;
+  background-color: #EDF1F7;
+  justify-content: center;
+
+  align-items: center;
+}
+.class-detail{
+  display: inline-flex;
+  flex-grow: 1;
+  padding: 1em;
+}
+.class{
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.details{
+  flex-grow: 1;
+  font-size: 0.9em;
+}
+.details ul{
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.details span{
+  margin-left: -0.5em;
+}
+
+
+.purchase-button{
+  display: inline-block;
+  margin: 0 1em;
+  text-decoration: none;
+  border: 0.09em solid #B28DCE;
+  border-radius: 0.4em;
+  background-color: transparent;
+  font-size: 1em;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  color: #9C74B8;
+}
+
+.search-button{
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  padding: 0.7em 1.3em 0.7em 1.3em;
+  background: linear-gradient(90deg, #9C74B8, #4AC2EA);
+  color: #FFF;
+  border: 2px solid #fff;
+  border-radius: 0.4em;
+  position: absolute;
+  right: 0;
+  margin-bottom: 3em;
+}
+
+.search-button:hover, .search-button:focus{
+  background: linear-gradient(90deg, #4AC2EA, #9C74B8);
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width:54em){
+  .progress-container{
+    display: none;
+  }
+
+  .progressbar-small{
+    display: block;
+    margin-left: 9%;
+  }
+
+  .progressbar-small h1{
+    font-size: 1.1em;
+    background: linear-gradient(#733A9C, #00AAE5);
+    background: -webkit-linear-gradient(#733A9C, #00AAE5);
+    background: -ms-linear-gradient(#733A9C, #00AAE5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .route{
+    left: 9%;
+  }
+
+  #colorblock{
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+  }
+
+  #date{
+    right: 9%;
+  }
+
+  .result-container{
+    min-width: 35em;
+    margin: auto;
+  }
+}
+
+@media (max-width:44em){
+  .logo{
+    height: 1.4em;
+    left:5%;
+  }
+  .nav-image-signin{
+    height: 1.2em;
+    right:5%;
+  }
+  .nav-header{
+    margin-bottom: 3.2em;
+  }
+
+  .result-container{
+    width: 100%;
+    min-width: 2em;
+  }
+  .progressbar-small{
+    margin-left: 5%;
+  }
+
+  #colorblock{
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+  }
+  .route{
+    left: 5%;
+  }
+  #date{
+    right: 5%;
+  }
+}
+@media (max-width:35em){
+  #colorblock{
+    height: auto;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+  .route{
+    display: flex;
+    position: static;
+  }
+  #date{
+    display: block;
+    position: static;
+    font-size: 0.9em;
+    color:#777;
+    margin-top: 0.2em;
+    font-weight: 200;
+  }
+
+  .schedule{
+    display: inline-block;
+  }
+  .times{
+    padding-bottom: 0;
+  }
+  .duration{
+    display: block;
+    padding: 1em;
+    padding-top: 0.2em;
+  }
+  .price{
+    display: inline-block;
+  }
+
+  .class-detail{
+    display: block;
+  }
+  .class{
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width:27.5em){
+  .logo{
+    height:1.1em;
+  }
+  .nav-image-signin{
+    height: 1em;
+  }
+  .nav-header{
+    margin-bottom: 2.4em;
+  }
+  .hidden-div{
+    width: 100%;
+  }
+  .search-button{
+    position: static;
+    display: block;
+    margin: auto;
+  }
+  .price-button{
+    display: inline-block;
+    margin-right: 1em;
+    margin-left: 1.3em;
+  }
+  .price{
+    display: block;
+    padding: 0;
+  }
+  .button-show{
+    display: block;
+    margin-left: 3.8em;
+    padding: 0;
+    margin-top: 0.5em;
+  }
+  .button-show img{
+    height:0.7em;
+    width: auto;
+  }
+}
