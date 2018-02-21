@@ -20,11 +20,6 @@
   order: 2;
 }
 
-.myFooter{
-  line-height: 5em;
-  height: 5em;
-}
-
 .content_container{
   display: flex;
 }

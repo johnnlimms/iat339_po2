@@ -53,16 +53,23 @@ header{
 
 .myFooter{
   background: #DDDDDD;
-  position: fixed;
   margin-top: 2%;
-  height: 3em;
   line-height: 3em;
+  height: 5em;
   width: 100%;
   text-align: center;
   font-size: 0.8em;
   bottom: 0;
 }
+.footer_title{
+  text-align: left;
+}
 
+.footer_links{
+  display: block;
+  padding: 0.2em;
+  text-align: left;
+}
 .footer-items{
   font-size: 1.2em;
   text-decoration: none;

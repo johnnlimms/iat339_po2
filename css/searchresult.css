@@ -30,12 +30,12 @@ a:-webkit-any-link{
   margin-bottom: 4em;
   position: relative;
 }
-.logo{
+/* .logo{
   height: 1.85em;
   width: auto;
   position: absolute;
   left: 9%;
-}
+} */
 .nav-image-signin{
   height: 1.4em;
   width: auto;
