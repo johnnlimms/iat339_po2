@@ -249,6 +249,14 @@ header{
   letter-spacing: 0.04em;
 }
 
+.myArticle{
+  margin: 4em;
+}
+
+.mybutton{
+  text-decoration: none;
+}
+
 /*=====================MEDIA QUERIES=====================*/
 
 @media (max-width: 55em){
