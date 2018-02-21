@@ -210,7 +210,44 @@ header{
   color: #733A9C;
 }
 
+/*Subheader styling*/
+.sub_header1{
+  margin: 0;
+  display: block;
+  color: #333333;
+  font-size: 1.5em;
+  font-weight: 600;
+}
 
+/*Paragraph style*/
+.body-type{
+  font-weight: 500;
+  color: #555555;
+  line-height: 1.8em;
+  width: 38em;
+}
+
+.articles{
+  margin: 2em;
+  background: rgb(250,250,250);
+  padding: 3em;
+}
+
+.article_item1 img{
+  margin-left: 0 auto;
+  width: 90%;
+}
+
+.main_header{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #333333;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
 
 /*=====================MEDIA QUERIES=====================*/
 
