@@ -52,15 +52,36 @@ header{
 }
 
 .myFooter{
-  background: #DDDDDD;
+  background: linear-gradient(0deg, #F3EEF7, #E9FBFD);
   margin-top: 2%;
-  line-height: 3em;
-  height: 5em;
-  width: 100%;
-  text-align: center;
+  max-width: 100%;
   font-size: 0.8em;
   bottom: 0;
+  padding: 2em 2em 2em 4em;
 }
+
+.myFooter i{
+  padding-right: 1em;
+}
+
+.myFooter a{
+  text-decoration: none;
+  padding: 1em 1em 1em 0;
+  color: #333333;
+}
+
+.myFooter a:hover{
+  color: #777777;
+}
+
+.footer_content3{
+  border-right: 0.5px solid #333333;
+}
+
+.footer_content4{
+  margin-left: 2em;
+}
+
 .footer_title{
   text-align: left;
 }
@@ -263,6 +284,7 @@ header{
 .mybutton{
   text-decoration: none;
 }
+
 
 /*=====================MEDIA QUERIES=====================*/
 
