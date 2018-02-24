@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
 *{
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -247,8 +246,8 @@ a:-webkit-any-link{
   padding: 0.7em 1.3em 0.7em 1.3em;
   background: linear-gradient(90deg, #9C74B8, #4AC2EA);
   color: #FFF;
-  border: 2px solid #fff;
   border-radius: 0.4em;
+  border: 1em transparent;
   position: absolute;
   right: 0;
   margin-bottom: 3em;
