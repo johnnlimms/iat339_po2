@@ -1,18 +1,6 @@
 *{
-  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  letter-spacing: 0.04em;
-}
-
-button{
-  cursor: pointer;
-}
-
-
-a:-webkit-any-link{
-  cursor: pointer;
 }
 
 .nav-header{
@@ -35,12 +23,12 @@ a:-webkit-any-link{
   position: absolute;
   left: 9%;
 } */
-.nav-image-signin{
+/*.nav-image-signin{
   height: 1.4em;
   width: auto;
   position: absolute;
   right: 9%;
-}
+}*/
 
 .progress-container{
   width: 45em;
@@ -226,7 +214,6 @@ a:-webkit-any-link{
 .details span{
   margin-left: -0.5em;
 }
-
 
 .purchase-button{
   display: inline-block;

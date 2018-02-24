@@ -83,7 +83,7 @@
 /*Subheader styling*/
 .sub_header1{
   margin: 0;
-  margin-bottom: 0.9em;
+  margin-bottom: 0.8em;
   display: block;
   font-weight: 500;
   font-size: 1.3em;
@@ -95,6 +95,16 @@
   display: block;
   font-size: 1.1em;
   font-weight: 600;
+}
+.sub_header3{
+  margin: 0;
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+  background: linear-gradient(#733A9C, #00AAE5);
+  background: -webkit-linear-gradient(#733A9C, #00AAE5);
+  background: -ms-linear-gradient(#733A9C, #00AAE5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*In-text link styling*/
@@ -134,23 +144,20 @@
   margin-top: 2em;
 }
 
-
-/*Ordered list styling*/
-.numbered_list,.bulleted_list{
-   margin: 0;
-}
-.numbered_list li{
-  line-height: 1.8em;
-  font-weight: 500;
-  color: #333333;
-}
-
 /*Unordered list styling*/
+.bulleted_list{
+  margin: 0;
+  padding: 0;
+}
 .bulleted_list li{
-  list-style-type: circle;
+  list-style-type: disc;
+  list-style-position: inside;
   line-height: 1.8em;
   font-weight: 500;
   color: #333333;
+}
+.bulleted_list span{
+  margin-left: -0.5em;
 }
 
 
