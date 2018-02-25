@@ -137,18 +137,31 @@ h1{
   position: relative;
   border: 1px solid #ccc;
   height: auto;
+  padding-bottom: 1.6em;
   margin-bottom: 2em;
 }
 
 .form{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: 1em;
   margin-left: 1em;
 }
+.topmargin{
+  margin-top: 1em;
+}
+#cardinput{
+  display: inline-block;
+  width: 95%;
+}
 .form form{
-  flex-grow: 1;
+  width: 50%;
+  order: 0;
+}
+#bigform{
+  width: 100%;
 }
 .textinput{
   display: block;
@@ -262,6 +275,24 @@ h1{
   }
   .form form{
     width: 100%;
+  }
+  .topmargin{
+    margin-top: 0;
+  }
+  #cardinput{
+    width: 90%;
+  }
+  #address1input{
+    order: 0;
+  }
+  #address2input{
+    order: 1;
+  }
+  #cityinput{
+    order: 2;
+  }
+  #postalinput{
+    order: 3;
   }
 }
 
