@@ -1,15 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
 *{
-  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  letter-spacing: 0.04em;
 }
 
-a:-webkit-any-link{
-  cursor: pointer;
-}
 .nav-header{
   width: 100%;
   display: flex;
