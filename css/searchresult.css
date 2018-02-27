@@ -169,6 +169,10 @@
 .button-show{
   display: inline-block;
   padding: 1em;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .button-show img{
   height:0.9em;
@@ -189,8 +193,14 @@
   margin-bottom: 1em;
   background-color: #EDF1F7;
   justify-content: center;
-
   align-items: center;
+}
+
+.dropdown-hid{
+  display: none;
+}
+.show{
+  display: block;
 }
 .class-detail{
   display: inline-flex;
