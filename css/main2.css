@@ -48,7 +48,8 @@ header{
   max-width: 100%;
   font-size: 0.9em;
   bottom: 0;
-  padding: 2em 2em 2em 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .myFooter i{
@@ -57,6 +58,7 @@ header{
 
 .myFooter a{
   text-decoration: none;
+  font-size: 0.9em;
   padding: 1em 1em 1em 0;
   color: #333333;
 }
@@ -65,16 +67,18 @@ header{
   color: #777777;
 }
 
-.footer_content3{
-  border-right: 0.5px solid #333333;
+.footer_container{
+  width: 87%;
 }
-
 .footer_content4{
-  margin-left: 2em;
+  padding-left: 4em;
+  border-left: 0.5px solid #333333;
 }
 
 .footer_title{
   text-align: left;
+  font-size: 1.1em;
+  font-weight: 600;
 }
 
 .footer_links{
@@ -379,6 +383,12 @@ header{
     width: 75%;
     margin: auto;
     margin-bottom: 2em;
+  }
+  .footer_container{
+    width: 95%;
+  }
+  .footer_content4{
+    padding-left: 1.5em;
   }
 }
 
