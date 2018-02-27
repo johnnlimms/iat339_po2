@@ -3,45 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Search Result</title>
-    <link rel="stylesheet" href="css/searchresult.css">
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/grids2.css">
     <link rel="javascript" href="js/script.js">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/searchresult.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
+
   <body>
+    <script src="js/dropdown.js"></script>
 
-    <!--HEADER/NAVIGATION MENU-->
-    <header>
-      <section class="renderedNav">
-        <div class = "nav_container">
-          <div class = "logo_cont">
-            <a href ="index.html">
-              <img class = "logo" src="img/hyperloop_logo.png" alt ="Coast Logo">
-            </a>
-          </div>
-          <div class = "nav-item">
-            <a class "selected" href="#">BOOK</a>
-          </div>
-          <div class = "nav-item">
-            <a href="#">SERVICES</a>
-          </div>
-          <div class = "nav-item">
-            <a href="updates.html">UPDATES</a>
-          </div>
-          <div class = "nav-item">
-            <a href="#">ABOUT US</a>
-          </div>
 
-          <div class ="nav-item">
-            <a href ="#"><i class="material-icons purple600">person_outline</i>SIGN IN</a>
-          </div>
-        </div>
-      </section>
-    </header>
-    <!--END HEADER/NAVIGATION MENU-->
+    <div class="nav-header">
+      <a href="index.html">
+        <img class="logo"src="img/hyperloop_logo.png" alt="logo image"/>
+      </a>
+      <a href="allbookings.html">
+        <img class="nav-image-signin" src="img/signin.png" alt="sign-in button"/>
+      </a>
+    </div>
+
     <div class="progress-container">
       <ul class="progressbar">
         <li class="active">search</li>
@@ -65,7 +47,7 @@
       <p id="date">Wednesday Mar 21</p>
     </div>
 
-<div class="result-container">
+    <div class="result-container">
     <div class="result">
       <div class="overview">
         <div class="schedule">
@@ -87,10 +69,11 @@
           <p class="smalltext">from</p>
           <p class="boldtext">$150.25</p>
         </div>
-        <a class="button-show" href="#"><img src="img/showmorebutton.png" alt="show more button"></a>
+        <button class="button-show" onclick="showFirst();"><img src="img/showmorebutton.png" alt="show more button"></a>
       </div>
       </div>
-      <div class="hidden-div">
+      <div id="hidden" class="dropdown-hid">
+        <div class="hidden-div">
         <div class="class-detail">
         <p class="class">Economy</p>
         <div class="details">
@@ -101,7 +84,7 @@
         </div>
         <a class="purchase-button" href="guestinfo.html">$150.25</a>
       </div>
-      <div class="hidden-div">
+        <div class="hidden-div">
         <div class="class-detail">
           <p class="class">Premium</p>
           <div class="details">
@@ -113,6 +96,7 @@
         </div>
         <a class="purchase-button" href="guestinfo.html">$170.25</a>
       </div>
+      </div>
     </div>
 
     <div class="result">
@@ -121,12 +105,12 @@
       <div class="times">
         <div class="departure">
           <p class="smalltext">Wed Mar 21</p>
-          <p class="boldtext">4:15 PM</p>
+          <p class="boldtext">9:30 PM</p>
         </div>
         <img src="img/arrow.png" alt="arrow"/>
         <div class="arrival">
           <p class="smalltext">Wed Mar 21</p>
-          <p class="boldtext">5:45 PM</p>
+          <p class="boldtext">11:00 PM</p>
         </div>
       </div>
       <p class="duration">Duration: 1h 30m</p>
@@ -134,15 +118,41 @@
     <div class="price-button">
       <div class="price">
         <p class="smalltext">from</p>
-        <p class="boldtext">$150.25</p>
+        <p class="boldtext">$140.20</p>
       </div>
-      <a class="button-show" href="#"><img src="img/showmorebutton.png" alt="show more button"></a>
+      <button class="button-show" onclick="showSecond();"><img src="img/showmorebutton.png" alt="show more button"></button>
     </div>
   </div>
+  <div id="hidden2" class="dropdown-hid">
+    <div class="hidden-div">
+    <div class="class-detail">
+    <p class="class">Economy</p>
+    <div class="details">
+      <ul>
+        <li><span>paid snacks and beverages</span></li>
+      </ul>
+    </div>
+    </div>
+    <a class="purchase-button" href="guestinfo.html">$140.20</a>
+  </div>
+    <div class="hidden-div">
+    <div class="class-detail">
+      <p class="class">Premium</p>
+      <div class="details">
+        <ul>
+          <li><span>free snacks and beverages</span></li>
+          <li><span>advance boarding</span></li>
+        </ul>
+      </div>
+    </div>
+    <a class="purchase-button" href="guestinfo.html">$170.25</a>
+  </div>
+  </div>
+
   </div>
   <form action="#">
     <button class="search-button" type="submit">NEW SEARCH</button>
   </form>
 </div>
-
+  </body>
 </html>

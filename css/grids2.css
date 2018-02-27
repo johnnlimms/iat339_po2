@@ -37,9 +37,10 @@
   flex-grow: 1;
 }
 
-.article_container{
+/*.article_container{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .article_item1{
@@ -52,6 +53,13 @@
   flex: 15em;
   flex-grow: 1;
   order: 1;
+  position: relative;
+}
+*/
+.linkbutton{
+  display: block;
+  float: right;
+  margin-top: 0.5em;
 }
 .myFooter{
   display: flex;
@@ -59,23 +67,19 @@
 
 .footer_container{
   display: flex;
-  flex-grow: 1;
+  margin: auto;
   flex-wrap: wrap;
-  flex: 50em;
+  justify-content: space-between;
 }
 .footer_content1{
-  flex-grow: 1;
   order: 1;
 }
 .footer_content2{
-  flex-grow: 1;
   order: 2;
 }
 .footer_content3{
-  flex-grow: 1;
   order: 3;
 }
 .footer_content4{
-  flex-grow: 2;
   order: 4;
 }

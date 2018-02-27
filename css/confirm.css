@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
 *{
-  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  letter-spacing: 0.04em;
 }
-
-a:-webkit-any-link{
-  cursor: pointer;
+h1{
+  font-size: 1.2em;
+  margin-left: 9%;
+  margin-top: 2em;
 }
 .nav-header{
-  width: 100%;
+  width: 82%;
+  margin: auto;
   display: flex;
   -webkit-display:flex;
   -ms-display: flex;
@@ -20,21 +18,20 @@ a:-webkit-any-link{
   -ms-flex-wrap: flex;
 
   align-items: baseline;
-  margin-top: 1.5em;
-  margin-bottom: 4em;
+  margin-top: 1em;
+  margin-bottom: 3em;
   position: relative;
+  justify-content: space-between;
 }
+
 .logo{
-  height: 1.85em;
+  height: 3em;
   width: auto;
-  position: absolute;
-  left: 9%;
 }
 .nav-image-signin{
-  height: 1.4em;
+  height: 1.3em;
   width: auto;
-  position: absolute;
-  right: 9%;
+  padding-bottom: 0.3em;
 }
 
 .progress-container{
@@ -97,8 +94,9 @@ a:-webkit-any-link{
   font-size: 0.9em;
   margin-top: 0.5em;
 }
-h1{
+.words h1{
   font-size: 1.2em;
+  margin: 0;
 }
 .progressbar-small h1{
   font-size: 1.1em;
@@ -113,7 +111,7 @@ h1{
   -webkit-text-fill-color: transparent;
 }
 
-#colorblock{
+.colorblock{
   display:block;
   width: 82%;
   margin: auto;
@@ -125,15 +123,22 @@ h1{
   position: relative;
 }
 
+.borderblock{
+  background-color: transparent;
+  border:0.09em solid #B38CCE;
+}
+
 .ticket-detail{
   display: flex;
-  padding: 2em 2em 0 2em;
+  padding: 2em;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 2em;
   flex-wrap: wrap;
 }
-#arrowicon{
+.smallerpadding{
+  padding: 1.4em 2em 1.4em 2em;
+}
+.arrowicon{
   height: 0.6em;
   width: auto;
   padding: 0 1.2em;
@@ -166,6 +171,26 @@ h1{
   align-items: center;
 }
 
+.continue-button{
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  padding: 0.7em 1.3em 0.7em 1.3em;
+  background: linear-gradient(90deg, #9C74B8, #4AC2EA);
+  color: #FFF;
+  border: 2px solid #fff;
+  border-radius: 0.4em;
+  display: block;
+  position: absolute;
+  right: 9%;
+  margin-bottom: 3em;
+}
+
+.continue-button:hover, .continue-button:focus{
+  background: linear-gradient(90deg, #4AC2EA, #9C74B8);
+  cursor: pointer;
+  outline: none;
+}
+
 @media (max-width:54em){
   .progress-container{
     display: none;
@@ -188,7 +213,7 @@ h1{
 
 @media (max-width:44em){
   .logo{
-    height: 1.4em;
+    height: 2.4em;
     left:5%;
   }
   .nav-image-signin{
@@ -225,11 +250,15 @@ h1{
     margin-top: 1em;
     flex-basis: 50%;
   }
+  .continue-button{
+    position: static;
+    margin: auto;
+  }
 }
 
 @media (max-width:27.5em){
   .logo{
-    height:1.1em;
+    height:2.1em;
   }
   .nav-image-signin{
     height: 1em;

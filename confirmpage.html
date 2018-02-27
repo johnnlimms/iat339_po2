@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Confirmation</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/confirm.css">
   </head>
 
   <body>
     <div class="nav-header">
-      <a href="#">
-        <img class="logo"src="img/logo.png" alt="logo image"/>
+      <a href="index.html">
+        <img class="logo"src="img/hyperloop_logo.png" alt="logo image"/>
       </a>
-      <a href="#">
+      <a href="allbookings.html">
         <img class="nav-image-signin" src="img/signin.png" alt="sign-in button"/>
       </a>
     </div>
@@ -35,7 +36,7 @@
     <p>Thanks for your booking. Enjoy your trip with HYPERLOOP!</p>
     </div>
 
-    <div id="colorblock">
+    <div class="colorblock">
       <div class="ticket-detail">
         <div class="guest">
           <p class="smalltext">Guest</P>
@@ -50,7 +51,7 @@
             <p class="smalltext">4:15PM</p>
             <p class="bigtext">Vancouver</p>
           </div>
-          <img id="arrowicon" src="img/arrow.png" alt="arrow"/>
+          <img class="arrowicon" src="img/arrow.png" alt="arrow"/>
           <div class="arrival">
             <p class="smalltext">5:45PM</p>
             <p class="bigtext">Toronto</p>
@@ -61,8 +62,11 @@
         <p class="bigtext">$150.25</p>
         </div>
       </div>
-
     </div>
+
+    <form action="allbookings.html">
+      <button class="continue-button" type="submit">FINISH</button>
+    </form>
 
 
 

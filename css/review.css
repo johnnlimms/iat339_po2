@@ -1,17 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
 *{
-  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  letter-spacing: 0.04em;
 }
 
-a:-webkit-any-link{
-  cursor: pointer;
-}
 .nav-header{
-  width: 100%;
+  width: 82%;
+  margin: auto;
   display: flex;
   -webkit-display:flex;
   -ms-display: flex;
@@ -20,21 +14,20 @@ a:-webkit-any-link{
   -ms-flex-wrap: flex;
 
   align-items: baseline;
-  margin-top: 1.5em;
-  margin-bottom: 4em;
+  margin-top: 1em;
+  margin-bottom: 3em;
   position: relative;
+  justify-content: space-between;
 }
+
 .logo{
-  height: 1.85em;
+  height: 3em;
   width: auto;
-  position: absolute;
-  left: 9%;
 }
 .nav-image-signin{
-  height: 1.4em;
+  height: 1.3em;
   width: auto;
-  position: absolute;
-  right: 9%;
+  padding-bottom: 0.3em;
 }
 
 .progress-container{
@@ -121,8 +114,11 @@ h1{
 .guestandprice{
   display: flex;
   align-items: center;
-  padding: 1.5em 2em 1em 2em;
+  padding: 1.5em 1em 1em 1em;
   justify-content: space-between;
+  border-bottom: 0.02em solid #ccc;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 .guest{
   display: flex;
@@ -227,7 +223,7 @@ h1{
 }
 @media (max-width:44em){
   .logo{
-    height: 1.4em;
+    height: 2.4em;
     left:5%;
   }
   .nav-image-signin{
@@ -264,7 +260,7 @@ h1{
 }
 @media (max-width:27.5em){
   .logo{
-    height:1.1em;
+    height:2.1em;
   }
   .nav-image-signin{
     height: 1em;

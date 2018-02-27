@@ -1,23 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
 *{
-  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  letter-spacing: 0.04em;
-}
-
-button{
-  cursor: pointer;
-}
-
-
-a:-webkit-any-link{
-  cursor: pointer;
 }
 
 .nav-header{
-  width: 100%;
+  width: 82%;
+  margin: auto;
   display: flex;
   -webkit-display:flex;
   -ms-display: flex;
@@ -26,21 +14,20 @@ a:-webkit-any-link{
   -ms-flex-wrap: flex;
 
   align-items: baseline;
-  margin-top: 1.5em;
-  margin-bottom: 4em;
+  margin-top: 1em;
+  margin-bottom: 3em;
   position: relative;
+  justify-content: space-between;
 }
-/* .logo{
-  height: 1.85em;
+
+.logo{
+  height: 3em;
   width: auto;
-  position: absolute;
-  left: 9%;
-} */
+}
 .nav-image-signin{
-  height: 1.4em;
+  height: 1.3em;
   width: auto;
-  position: absolute;
-  right: 9%;
+  padding-bottom: 0.3em;
 }
 
 .progress-container{
@@ -182,6 +169,10 @@ a:-webkit-any-link{
 .button-show{
   display: inline-block;
   padding: 1em;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .button-show img{
   height:0.9em;
@@ -202,8 +193,14 @@ a:-webkit-any-link{
   margin-bottom: 1em;
   background-color: #EDF1F7;
   justify-content: center;
-
   align-items: center;
+}
+
+.dropdown-hid{
+  display: none;
+}
+.show{
+  display: block;
 }
 .class-detail{
   display: inline-flex;
@@ -228,7 +225,6 @@ a:-webkit-any-link{
   margin-left: -0.5em;
 }
 
-
 .purchase-button{
   display: inline-block;
   margin: 0 1em;
@@ -247,8 +243,8 @@ a:-webkit-any-link{
   padding: 0.7em 1.3em 0.7em 1.3em;
   background: linear-gradient(90deg, #9C74B8, #4AC2EA);
   color: #FFF;
-  border: 2px solid #fff;
   border-radius: 0.4em;
+  border: 1em transparent;
   position: absolute;
   right: 0;
   margin-bottom: 3em;
@@ -300,7 +296,7 @@ a:-webkit-any-link{
 
 @media (max-width:44em){
   .logo{
-    height: 1.4em;
+    height: 2.4em;
     left:5%;
   }
   .nav-image-signin{
@@ -374,7 +370,7 @@ a:-webkit-any-link{
 
 @media (max-width:27.5em){
   .logo{
-    height:1.1em;
+    height:2.1em;
   }
   .nav-image-signin{
     height: 1em;

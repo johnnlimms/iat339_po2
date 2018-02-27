@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Guest Information</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/guestinfo.css">
 
   </head>
 
   <body>
     <div class="nav-header">
-      <a href="#">
-        <img class="logo"src="img/logo.png" alt="logo image"/>
+      <a href="index.html">
+        <img class="logo"src="img/hyperloop_logo.png" alt="logo image"/>
       </a>
-      <a href="#">
+      <a href="allbookings.html">
         <img class="nav-image-signin" src="img/signin.png" alt="sign-in button"/>
       </a>
     </div>
@@ -51,12 +52,10 @@
           <form><lable>Last Name:</lable><input class="textinput" type="text" name="textinput"></form>
         </div>
         <div class="form">
-          <form><lable>Address Line1:</lable><input class="textinput" type="text" name="textinput"></form>
-          <form><lable>City:</lable><input class="textinput" type="text" name="textinput"></form>
-        </div>
-        <div class="form">
-          <form><lable>Address Line2:</lable><input class="textinput" type="text" name="textinput"></form>
-          <form><lable>Postal Code:</lable><input class="textinput" type="text" name="textinput"></form>
+          <form id="address1input"><lable>Address Line1:</lable><input class="textinput" type="text" name="textinput"></form>
+          <form id="cityinput"><lable>City:</lable><input class="textinput" type="text" name="textinput"></form>
+          <form id="address2" class="topmargin"><lable>Address Line2:</lable><input class="textinput" type="text" name="textinput"></form>
+          <form id="postalinput" class="topmargin"><lable>Postal Code:</lable><input class="textinput" type="text" name="textinput"></form>
         </div>
         <div class="form">
           <form><lable>Country:</lable><input class="textinput" type="text" name="textinput"></form>

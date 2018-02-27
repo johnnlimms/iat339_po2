@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
 *{
-  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  letter-spacing: 0.04em;
-}
-
-a:-webkit-any-link{
-  cursor: pointer;
 }
 
 h1{
@@ -25,7 +17,8 @@ h1{
 }
 
 .nav-header{
-  width: 100%;
+  width: 82%;
+  margin: auto;
   display: flex;
   -webkit-display:flex;
   -ms-display: flex;
@@ -34,21 +27,20 @@ h1{
   -ms-flex-wrap: flex;
 
   align-items: baseline;
-  margin-top: 1.5em;
-  margin-bottom: 4em;
+  margin-top: 1em;
+  margin-bottom: 3em;
   position: relative;
+  justify-content: space-between;
 }
+
 .logo{
-  height: 1.85em;
+  height: 3em;
   width: auto;
-  position: absolute;
-  left: 9%;
 }
 .nav-image-signin{
-  height: 1.4em;
+  height: 1.3em;
   width: auto;
-  position: absolute;
-  right: 9%;
+  padding-bottom: 0.3em;
 }
 
 .progress-container{
@@ -145,18 +137,31 @@ h1{
   position: relative;
   border: 1px solid #ccc;
   height: auto;
+  padding-bottom: 1.6em;
   margin-bottom: 2em;
 }
 
 .form{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: 1em;
   margin-left: 1em;
 }
+.topmargin{
+  margin-top: 1em;
+}
+#cardinput{
+  display: inline-block;
+  width: 95%;
+}
 .form form{
-  flex-grow: 1;
+  width: 50%;
+  order: 0;
+}
+#bigform{
+  width: 100%;
 }
 .textinput{
   display: block;
@@ -232,7 +237,7 @@ h1{
 
 @media (max-width:44em){
   .logo{
-    height: 1.4em;
+    height: 2.4em;
     left:5%;
   }
   .nav-image-signin{
@@ -271,11 +276,29 @@ h1{
   .form form{
     width: 100%;
   }
+  .topmargin{
+    margin-top: 0;
+  }
+  #cardinput{
+    width: 90%;
+  }
+  #address1input{
+    order: 0;
+  }
+  #address2input{
+    order: 1;
+  }
+  #cityinput{
+    order: 2;
+  }
+  #postalinput{
+    order: 3;
+  }
 }
 
 @media (max-width:27.5em){
   .logo{
-    height:1.1em;
+    height:2.1em;
   }
   .nav-image-signin{
     height: 1em;
