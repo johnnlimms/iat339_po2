@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+*{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  letter-spacing: 0.04em;
+}
+html{ /*Prevents the content from shifting to the right by having the scroll bar show up all the time*/
+  overflow:scroll;
+}
+
+/*Changes the font family of the whole document*/
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 header{
   background: rgba(255, 255, 255, 0.7);
   position: relative;
@@ -41,6 +58,7 @@ header{
 .nav-item a:focus{ /*Focus state of the navigation bar links*/
   border-bottom: 0.1em solid #333333;
 }
+
 
 .myFooter{
   background-color: #EDF1F7;
@@ -130,6 +148,7 @@ header{
 .table{
   padding: 1em;
   background-image: url('../img/background.png');
+  background-image: url('../img/bg-1.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -201,6 +220,130 @@ header{
   outline: none;
 }
 
+.myButton{
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  padding: 0.7em 1.3em 0.7em 1.3em;
+  background: linear-gradient(90deg, #9C74B8, #4AC2EA);
+  color: #FFF;
+  border: 0px solid #fff;
+  border-radius: 0.4em;
+  margin-left: 70%;
+}
+
+.myButton:hover, .myButton:focus{
+  background: linear-gradient(90deg, #4AC2EA, #9C74B8);
+  cursor: pointer;
+  outline: none;
+}
+
+.readMore{
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  padding: 0.7em 1.3em 0.7em 1.3em;
+  background: linear-gradient(90deg, #9C74B8, #4AC2EA);
+  color: #FFF;
+  border: 0px solid #fff;
+  margin-top: 2em;
+  border-radius: 0.4em;
+}
+
+.readMore:hover, .readMore:focus{
+  background: linear-gradient(90deg, #4AC2EA, #9C74B8);
+  cursor: pointer;
+  outline: none;
+}
+
+.article_item1 img{
+  min-width:100%;
+  min-height:100%;
+  object-fit: contain;
+}
+
+.article_text{
+  margin-left: 3em;
+}
+
+
+
+
+/*============TEST=============*/
+/* -------------------- Select Box Styles: stackoverflow.com Method */
+/* -------------------- Source: http://stackoverflow.com/a/5809186 */
+.form_title{
+  margin-bottom: 1.5em;
+}
+.form_label{
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.myFormContainer{
+  margin-top: 0.5em;
+}
+
+.myDateContainer{
+  margin-top: 0.5em;
+  position: relative;
+}
+
+select.mydropdown{
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background: transparent;
+   background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border-bottom: 2px solid lightblue;
+   height: 3em;
+   border-top: 0px solid #aaa;
+   border-left: 0px solid #aaa;
+   border-right: 0px solid #aaa;
+   color: #555;
+   font-size: inherit;
+   margin: 0em 1em 1em 0em;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 100%;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input.mydropdown{
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background: transparent;
+   background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border-bottom: 2px solid lightblue;
+   height: 3em;
+   border-top: 0px solid #aaa;
+   border-left: 0px solid #aaa;
+   border-right: 0px solid #aaa;
+   color: #555;
+   font-size: inherit;
+   margin: 0em 1em 1em 0em;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 100%;
+}
 
 /*===========FONTS===============*/
 .material-icons {
@@ -234,7 +377,7 @@ header{
 
 /*Subheader styling*/
 .sub_header1{
-  margin: 0;
+  margin-bottom: 1em;
   display: block;
   color: #333;
   font-size: 1.5em;
@@ -390,6 +533,8 @@ header{
   .footer_content4{
     padding-left: 1.5em;
   }
+.footer_title.last{
+  margin-bottom: 1em;
 }
 
 @media (max-width: 42.5em){

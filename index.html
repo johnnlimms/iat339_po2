@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/grids2.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
@@ -26,20 +27,17 @@
             </a>
           </div>
           <div class = "nav-item">
-            <a class "selected" href="#">BOOK</a>
+            <a class "selected" href="#">MY BOOKINGS</a>
           </div>
           <div class = "nav-item">
-            <a href="#">SERVICES</a>
+            <a href="updates.html">PRESS RELEASES</a>
           </div>
           <div class = "nav-item">
-            <a href="updates.html">UPDATES</a>
-          </div>
-          <div class = "nav-item">
-            <a href="#">ABOUT US</a>
+            <a href="updates.html">ABOUT US</a>
           </div>
 
           <div class ="nav-item">
-            <a href ="#"><i class="material-icons purple600">person_outline</i>SIGN IN</a>
+            <a href ="#"><i class="material-icons purple600">person_outline</i></a>
           </div>
         </div>
       </section>
@@ -50,43 +48,35 @@
     <section class = "table">
       <div class ="form_table">
         <label class ="form_title">FIND TICKETS</label>
-        <form class = "myDatePicker">
-          <div class ="city_picker">
-            <label class ="textfield_title" for="from">from:</label>
-            <select name="cars">
-              <option value="select">Please Select a City</option>
-              <option value="vancouver">Vancouver</option>
-              <option value="seattle">Seattle</option>
-              <option value="portland">Portland</option>
-              <option value="sf">San Francisco</option>
-              <option value="sj">San Jose</option>
-              <option value="lax">Los Angeles</option>
-              <option value="sandiego">San Diego</option>
-            </select>
-          </div>
-          <div class ="city_picker">
-            <label class ="textfield_title" for="to">To:</label>
-            <select name="cars">
-              <option value="select">Please Select a City</option>
-              <option value="vancouver">Vancouver</option>
-              <option value="seattle">Seattle</option>
-              <option value="portland">Portland</option>
-              <option value="sf">San Francisco</option>
-              <option value="sj">San Jose</option>
-              <option value="lax">Los Angeles</option>
-              <option value="sandiego">San Diego</option>
-            </select>
-          </div>
-          <div class ="date_picker">
-            <label class ="textfield_title" for="depart">Depart:</label>
-            <input type="date" id="depart" name="depart">
-          </div>
-          <div class ="date_picker">
-            <label class ="textfield_title" for="return">Return (Optional):</label>
-            <input type="date" id="return" name="return">
-          </div>
+        <div class = "myFormContainer">
+          <label class ="form_label">FROM</label>
+          <select class="mydropdown">
+            <!-- This method is nice because it doesn't require extra div tags, but it also doesn't retain the style across all browsers. -->
+            <option>Select an Option</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+        <div class = "myFormContainer">
+          <label class ="form_label">TO  </label>
+          <select class="mydropdown">
+            <!-- This method is nice because it doesn't require extra div tags, but it also doesn't retain the style across all browsers. -->
+            <option>Select an Option</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+        <div class = "myDateContainer">
+          <label class ="form_label">DEPART</label>
+          <input class = "mydropdown" type="date" id="return" name="return">
+        </div>
+        <div class = "myDateContainer">
+          <label class ="form_label">RETURN (OPTIONAL)</label>
+          <input class = "mydropdown" type="date" id="return" name="return">
+        </div>
+        <form action="searchresult.html">
+          <button class="myButton" type="submit">SEARCH</button>
         </form>
-        <form action="searchresult.html"><button class ="submit">SUBMIT</button></form>
       </div>
     </section>
 
@@ -155,11 +145,6 @@
             </div>
           </div>
         </div>
-<!--
-        <a class ="footer-items" href = "#">Home</a>
-        <a class ="footer-items" href = "#">Citations</a>
-        <a class ="footer-items" href = "#">Styleguide</a>
-        <a class ="footer-items" href = "#">Github</a> -->
       </div>
     </footer>
   </body>
