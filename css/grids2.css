@@ -171,9 +171,60 @@
     padding-left: 1.5em;
   }
 
+
 }
 
 @media (max-width: 55em){ /*880px*/
+  .postedFeedback{
+    background: rgb(250,250,250);
+    width: 80%;
+    padding: 2em;
+  }
+
+  .postedFeedback form{
+      display: inline-block;
+  }
+
+  .myReplyButton{
+    letter-spacing: 0.15em;
+    font-size: 0.75em;
+    padding: 0.7em 1.3em 0.7em 1.3em;
+    background: linear-gradient(90deg, #9C74B8, #4AC2EA);
+    color: #FFF;
+    border: 0px solid #fff;
+    border-radius: 0.4em;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .myReplyButton:hover, .myReplyButton:focus{
+    background: linear-gradient(90deg, #4AC2EA, #9C74B8);
+    cursor: pointer;
+    outline: none;
+  }
+
+  .postName{
+    font-size: 0.8em;
+  }
+
+  .postDate{
+    margin-top: 0.3em;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #DDDDDD;
+  }
+
+  .postText{
+    font-size: 0.8em;
+    color: #555555;
+    margin-top: 1em;
+    max-width: 100%;
+    line-height: 1.5em;
+    display: block;
+  }
+
+
+
   .nav_container{
     position: relative;
     clear: left;
