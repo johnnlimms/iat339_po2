@@ -5,6 +5,7 @@
 .nav_container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .renderedNav{
@@ -25,8 +26,6 @@
 }
 
 .nav-item{
-  flex: 30em;
-  flex-grow: 1;
   order: 1;
 }
 
@@ -107,4 +106,10 @@
   flex: 15em;
   flex-grow: 1;
   order: 1;
+}
+
+@media (max-width:36em){
+  .nav-item{
+    width: 90%;
+  }
 }
