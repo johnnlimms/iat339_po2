@@ -37,7 +37,7 @@
   flex-grow: 1;
 }
 
-/*.article_container{
+.article_container{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -55,7 +55,7 @@
   order: 1;
   position: relative;
 }
-*/
+
 .linkbutton{
   display: block;
   float: right;
@@ -84,6 +84,30 @@
   order: 4;
 }
 
+.feedback_name_container{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 10em;
+}
+.feedback_item1{
+  order: 1;
+  flex: 1;
+}
+.feedback_item2{
+  order: 2;
+  flex: 2;
+}
+
+.myTextfield{
+  margin-top: 1em;
+}
+
+.myTextfield::placeholder{
+  padding-left: 0.5em;
+  font-size: 1em;
+  color: #EEEEEE;
+}
+
 
 
 
@@ -91,6 +115,18 @@
 @media (max-width: 64em){
   .form_table{
     max-width: 60%;
+  }
+
+  .feedback_name_container{
+    max-width:100%;
+  }
+
+  .feedback_container{
+    max-width: 100%;
+  }
+
+  .myTextfield.myTextArea{
+    width: 85%;
   }
 
   .article_text .sub_header1{
@@ -103,6 +139,36 @@
 
   .body-type{
     width:80%;
+  }
+  .articles{
+    width: 75%;
+    padding: 0;
+    padding-bottom: 3em;
+  }
+  .article_image{
+    width: 100%;
+  }
+  .article_thumbnail{
+    width: 100%;
+  }
+  .article_text{
+    width: 80%;
+    margin-top: 2em;
+  }
+
+  .news{
+    flex-wrap: wrap;
+  }
+  .onenews{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+  .footer_container{
+    width: 95%;
+  }
+  .footer_content4{
+    padding-left: 1.5em;
   }
 
 }
@@ -134,6 +200,7 @@
     margin-top: 2em;
     margin-left: 0;
     width: 100%;
+        border-left: none;
     text-align: center;
   }
   .form_table{
@@ -147,6 +214,33 @@
 }
 
 @media (max-width: 42.5em){
+  .form_table{
+    max-width: 100%;
+    margin: 3em;
+  }
+
+  .articles{
+    width:100%;
+    padding: 0;
+    padding-bottom: 3em;
+  }
+  .article_image{
+    width: 100%;
+  }
+  .onenews{
+    width: 100%;
+  }
+  .feedback_name_container{
+    display: block;
+  }
+
+  .feedback_container{
+    display: block;
+  }
+
+  .feedback_item2{
+    margin-top: 2em;
+  }
 
 }
 
@@ -157,10 +251,10 @@
 
   .footer_container a{
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .footer_content1{
-        margin-top: 1em;
+    margin-top: 1em;
     text-align: center;
     width:100%;
   }
