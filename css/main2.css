@@ -425,6 +425,13 @@ input[type=date]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+
+input::-webkit-inner-spin-button,
+input::-webkit-calendar-picker-indicator{
+  /* visibility: hidden;
+  -webkit-appearance: none; */
+}
+
 input.mydropdown{
    -webkit-appearance: button;
    -webkit-border-radius: 2px;
