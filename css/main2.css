@@ -26,6 +26,7 @@ header{
   padding: 1em;
   align-items: center;
   text-align: center;
+  box-shadow: 1px 1px 10px 2px rgba(30,30,30,0.1);
 }
 
 .nav_container .logo_cont{
@@ -117,6 +118,7 @@ header{
 }
 
 
+
 .button_element2{
   margin: 1em;
   padding: 1em;
@@ -130,6 +132,34 @@ header{
   max-width: 40%;
   background: rgba(255,255,255,0.9);
   border-radius: 0.5em;
+}
+
+.feedback_name_container{
+  max-width: 70%;
+}
+
+.feedback_container{
+  margin-top: 3em;
+  max-width: 80%;
+}
+
+.myTextfield.myTextArea{
+  text-align: left;
+  width: 75%;
+  background: transparent;
+  border: 1px solid #eeeeee;
+  height: 10em;
+  display: block;
+  padding: 1em;
+}
+
+.myTextfield{
+  background: transparent;
+  border: 1px solid #eeeeee;
+  height: 3em;
+  width: 80%;
+  display: block;
+  padding-left: 1em;
 }
 
 
@@ -228,10 +258,29 @@ header{
   color: #FFF;
   border: 0px solid #fff;
   border-radius: 0.4em;
-  margin-left: 70%;
+  margin-top: 2em;
+  margin-left: 80%;
 }
 
 .myButton:hover, .myButton:focus{
+  background: linear-gradient(90deg, #4AC2EA, #9C74B8);
+  cursor: pointer;
+  outline: none;
+}
+
+.myPostButton{
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  padding: 0.7em 1.3em 0.7em 1.3em;
+  background: linear-gradient(90deg, #9C74B8, #4AC2EA);
+  color: #FFF;
+  border: 0px solid #fff;
+  border-radius: 0.4em;
+  margin-top: 2em;
+  margin-left: 70%;
+}
+
+.myPostButton:hover, .myPostButton:focus{
   background: linear-gradient(90deg, #4AC2EA, #9C74B8);
   cursor: pointer;
   outline: none;
@@ -444,7 +493,14 @@ input.mydropdown{
 }
 .article_text{
   width: 40%;
-  display: block;
+}
+
+.article_text p{
+  margin-bottom: 3em;
+}
+
+.article_text .sub_header2{
+  margin-bottom: 1em;
 }
 .article_image{
   width: 50%;
@@ -457,7 +513,7 @@ input.mydropdown{
 
 .main_header{
   text-align: center;
-  margin: 0;
+  margin-top: 2em;
   padding: 0;
   display: block;
   color: #333333;
@@ -479,79 +535,6 @@ input.mydropdown{
   color: #9C74B8;
 }
 
-/*=====================MEDIA QUERIES=====================*/
-@media (max-width: 64em){
-  .article_text{
-    width: 50%;
-}
-
-@media (max-width: 55em){
-  .nav_container{
-    position: relative;
-    clear: left;
-    display: inline-block;
-  }
-
-  .nav_container a{
-    display: inline-block;
-  }
-  .logo_cont{
-    display: inline-block;
-  }
-
-  .form_table{
-    max-width: 50%;
-  }
-
-  .articles{
-    width: 75%;
-    padding: 0;
-    padding-bottom: 3em;
-  }
-  .article_image{
-    width: 100%;
-  }
-  .article_thumbnail{
-    width: 100%;
-  }
-  .article_text{
-    width: 80%;
-    margin-top: 2em;
-  }
-
-  .news{
-    flex-wrap: wrap;
-  }
-  .onenews{
-    width: 75%;
-    margin: auto;
-    margin-bottom: 2em;
-  }
-  .footer_container{
-    width: 95%;
-  }
-  .footer_content4{
-    padding-left: 1.5em;
-  }
-.footer_title.last{
-  margin-bottom: 1em;
-}
-
-@media (max-width: 42.5em){
-    .form_table{
-      max-width: 100%;
-      margin: 3em;
-    }
-
-    .articles{
-      width:100%;
-      padding: 0;
-      padding-bottom: 3em;
-    }
-    .article_image{
-      width: 100%;
-    }
-    .onenews{
-      width: 100%;
-    }
+.myFeedback{
+  margin: 3em;
 }
