@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/grids2.css">
 
+    <!--SOURCE: https://www.codecademy.com/courses/javascript-beginner-en-x1onO/0/1-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type='text/javascript' src='js/datepicker.js'></script>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
@@ -75,13 +82,19 @@
           </select>
         </div>
         <div class = "myDateContainer">
-          <label class ="form_label">DEPART</label>
-          <input class = "mydropdown" type="date" id="return" name="return">
+          <div class = "myDepart">
+            <label class ="form_label">DEPART</label>
+            <input type="text" id="departing" class = "myDatePicker">
+          </div>
+          <div class = "myReturn">
+            <label class ="form_label">RETURN (OPTIONAL)</label>
+            <input type="text" id="returning" class = "myDatePicker">
+          </div>
         </div>
-        <div class = "myDateContainer">
+        <!-- <div class = "myDateContainer">
           <label class ="form_label">RETURN (OPTIONAL)</label>
-          <input class = "mydropdown unstyled_calendar" type="date" id="return" name="return">
-        </div>
+          <input type="text" id="returning" class = "myDatePicker">
+        </div> -->
         <form action="searchresult.html">
           <button class="myButton" type="submit">SEARCH</button>
         </form>

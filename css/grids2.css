@@ -108,6 +108,22 @@
   color: #EEEEEE;
 }
 
+.myDateContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 10em;
+}
+
+.myDepart{
+  order: 1;
+  flex: 1;
+}
+
+.myReturn{
+  order: 1;
+  flex: 1;
+}
+
 
 
 
@@ -291,6 +307,20 @@
 
   .feedback_item2{
     margin-top: 2em;
+  }
+  .myDateContainer{
+    display: block;
+  }
+  .myDatePicker{
+    width: 95%;
+  }
+  .myReturn{
+    margin-left: 0;
+  }
+
+  .myButton{
+      margin-left: 0;
+      text-align: center;
   }
 
 }

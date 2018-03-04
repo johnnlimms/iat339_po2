@@ -239,7 +239,7 @@ header{
   background-size: cover;
 }
 
-.myDatePicker{
+/* .myDatePicker{
   margin-left: 5%;
   max-width: 100%;
   font-size: 1.2em;
@@ -248,16 +248,10 @@ header{
 
 .myDatePicker label{
   display: block;
-}
-
-/* .city_picker{
-  margin-bottom: 1.5em;
-}
-.date_picker{
-  margin-bottom: 1.5em;
 } */
 
-.myDatePicker select{
+
+/* .myDatePicker #returning{
   width: 100%;
   display: block;
   height: 2.4em;
@@ -282,7 +276,7 @@ header{
   font-weight: 300;
   letter-spacing: 0.02em;
   color: #733A9C;
-}
+} */
 
 /*Submit button styling*/
 .submit{
@@ -392,6 +386,36 @@ header{
   position: relative;
 }
 
+.myDatePicker{
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background: transparent;
+  background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-16.png);
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid lightblue;
+  height: 2.5em;
+  border-top: 0px solid #aaa;
+  border-left: 0px solid #aaa;
+  border-right: 0px solid #aaa;
+  color: #555;
+  font-size: inherit;
+  margin: 0em 1em 1em 0em;
+  overflow:hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
+}
+
+.myReturn{
+  margin-left: 3em;
+}
+
+
 select.mydropdown{
    -webkit-appearance: button;
    -webkit-border-radius: 2px;
@@ -415,21 +439,6 @@ select.mydropdown{
    text-overflow: ellipsis;
    white-space: nowrap;
    width: 100%;
-}
-
-input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-}
-
-
-input::-webkit-inner-spin-button,
-input::-webkit-calendar-picker-indicator{
-  /* visibility: hidden;
-  -webkit-appearance: none; */
 }
 
 input.mydropdown{
