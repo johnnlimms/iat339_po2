@@ -20,10 +20,7 @@
   justify-content: space-between;
 }
 
-.logo{
-  height: 3em;
-  width: auto;
-}
+
 .nav-image-signin{
   height: 1.3em;
   width: auto;
@@ -295,10 +292,7 @@
 }
 
 @media (max-width:44em){
-  .logo{
-    height: 2.4em;
-    left:5%;
-  }
+
   .nav-image-signin{
     height: 1.2em;
     right:5%;
@@ -369,9 +363,6 @@
 }
 
 @media (max-width:27.5em){
-  .logo{
-    height:2.1em;
-  }
   .nav-image-signin{
     height: 1em;
   }

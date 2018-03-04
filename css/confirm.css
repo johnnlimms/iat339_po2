@@ -7,6 +7,17 @@ h1{
   margin-left: 9%;
   margin-top: 2em;
 }
+
+.hidden{
+  display: none;
+}
+
+.alone{
+  margin-left: 25em;
+  /* float: right;
+
+  position: absolute; */
+}
 .nav-header{
   width: 82%;
   margin: auto;
@@ -24,10 +35,6 @@ h1{
   justify-content: space-between;
 }
 
-.logo-confirm{
-  height: 3em;
-  width: auto;
-}
 .nav-image-signin{
   height: 1.3em;
   width: auto;
@@ -39,6 +46,7 @@ h1{
   margin: auto;
 }
 .progressbar li{
+  margin-top: 5em;
   font-size: 0.9em;
   color: #808080;
   list-style: none;
@@ -191,11 +199,20 @@ h1{
   outline: none;
 }
 
-@media (max-width:54em){
+@media (max-width:55em){
+
+  .nav-item{
+    margin-left: 0;
+  }
+
+  .progressbar li{
+    margin-top: 50%;
+  }
   .progress-container{
     display: none;
   }
   .progressbar-small{
+    margin-top: 2em;
     display: block;
     margin-left: 9%;
   }
@@ -212,10 +229,6 @@ h1{
 }
 
 @media (max-width:44em){
-  .logo{
-    height: 2.4em;
-    left:5%;
-  }
   .nav-image-signin{
     height: 1.2em;
     right:5%;
@@ -257,9 +270,6 @@ h1{
 }
 
 @media (max-width:27.5em){
-  .logo{
-    height:2.1em;
-  }
   .nav-image-signin{
     height: 1em;
   }
