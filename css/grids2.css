@@ -154,9 +154,6 @@
     display: block;
   }
 
-  .body-type{
-    width:80%;
-  }
   .articles{
     width: 75%;
     padding: 0;
@@ -169,7 +166,8 @@
     width: 100%;
   }
   .article_text{
-    width: 80%;
+    margin: 0 auto;
+    width: 85%;
     margin-top: 2em;
   }
 
@@ -240,8 +238,6 @@
     display: block;
   }
 
-
-
   .nav_container{
     position: relative;
     clear: left;
@@ -279,6 +275,9 @@
   .footer_content3{
     border-right: none;
   }
+  .footer_icons{
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 42.5em){
@@ -294,6 +293,9 @@
   }
   .article_image{
     width: 100%;
+  }
+  .article_text{
+    width: 80%;
   }
   .onenews{
     width: 100%;

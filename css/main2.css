@@ -1,18 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 *{
-  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
-  letter-spacing: 0.04em;
 }
 html{ /*Prevents the content from shifting to the right by having the scroll bar show up all the time*/
   overflow:scroll;
-}
-
-/*Changes the font family of the whole document*/
-body{
-  font-family: 'Lato', sans-serif;
 }
 
 header{
@@ -78,7 +70,7 @@ header{
 .myFooter a{
   text-decoration: none;
   font-size: 0.9em;
-  padding: 1em 1em 1em 0;
+  padding: 0.8em 0.8em 0.8em 0;
   color: #333333;
 }
 
@@ -90,6 +82,7 @@ header{
   width: 87%;
 }
 .footer_content4{
+
   padding-left: 4em;
   border-left: 0.5px solid #333333;
 }
@@ -98,11 +91,19 @@ header{
   text-align: left;
   font-size: 1.1em;
   font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.last{
+  margin-bottom: 1.5em;
+}
+
+.footer_icons{
+  padding-left: 2em;
 }
 
 .footer_links{
   display: block;
-  padding: 0.2em;
   text-align: left;
 }
 .footer-items{
@@ -128,8 +129,8 @@ header{
 
 .form_table{
   margin-left: 5%;
-  padding: 2em;
-  max-width: 40%;
+  padding: 1.3em;
+  max-width: 33%;
   background: rgba(255,255,255,0.9);
   border-radius: 0.5em;
 }
@@ -220,10 +221,10 @@ header{
 }
 
 .form_title{
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-bottom: 0.5em;
   border-bottom: 1px solid darkgray;
-  margin-bottom: 0.5em;
+
   display: block;
 }
 
@@ -308,8 +309,8 @@ header{
   color: #FFF;
   border: 0px solid #fff;
   border-radius: 0.4em;
-  margin-top: 2em;
-  margin-left: 80%;
+  margin-top: 1.3em;
+  margin-left: 79%;
 }
 
 .myButton:hover, .myButton:focus{
@@ -370,7 +371,7 @@ header{
 /* -------------------- Select Box Styles: stackoverflow.com Method */
 /* -------------------- Source: http://stackoverflow.com/a/5809186 */
 .form_title{
-  margin-bottom: 1.5em;
+  margin-bottom: 1.3em;
 }
 .form_label{
   font-weight: bold;
@@ -397,7 +398,7 @@ header{
   background-position: 97% center;
   background-repeat: no-repeat;
   border-bottom: 2px solid lightblue;
-  height: 2.5em;
+  height: 1.8em;
   border-top: 0px solid #aaa;
   border-left: 0px solid #aaa;
   border-right: 0px solid #aaa;
@@ -427,7 +428,7 @@ select.mydropdown{
    background-position: 97% center;
    background-repeat: no-repeat;
    border-bottom: 2px solid lightblue;
-   height: 3em;
+   height: 2.4em;
    border-top: 0px solid #aaa;
    border-left: 0px solid #aaa;
    border-right: 0px solid #aaa;
