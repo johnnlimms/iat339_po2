@@ -1,0 +1,79 @@
+header{
+  background: rgba(255, 255, 255, 0.7);
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav_container{
+  padding: 1em;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 10px 2px rgba(30,30,30,0.1);
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex: 10em;
+}
+
+.nav_container .logo_cont{
+  text-align: left;
+}
+
+.logo_cont{
+  min-width: 25%;
+  flex-grow: 1;
+  order: 1;
+}
+
+.renderedNav{
+  display: flex;
+}
+
+.renderedNav .logo{
+  margin: 0 auto;
+  max-width: 15em;
+  width: 100%;
+}
+
+.nav-item{
+  flex-grow: 1;
+  order: 2;
+}
+
+.nav-item a{
+  color: #333333;
+  line-height: 5em;
+  height: 3em;
+  text-decoration: none;
+}
+
+.nav-item a:hover{ /*puts a hover state on links on the navigation bar*/
+  border-bottom: 0.1em solid #333333;
+}
+
+.nav-item a:focus{ /*Focus state of the navigation bar links*/
+  border-bottom: 0.1em solid #333333;
+}
+.material-icons.purple600{
+  color:#733A9C;
+}
+.alone{
+  margin-left: 25em;
+}
+
+ @media (max-width: 55em){
+.nav_container{
+  position: relative;
+  clear: left;
+  display: inline-block;
+}
+
+.nav_container a{
+  padding-top: 1em;
+  display: inline-block;
+}
+.logo_cont{
+  display: inline-block;
+}
+}
