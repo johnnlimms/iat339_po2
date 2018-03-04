@@ -130,6 +130,7 @@
 
 /*=====================MEDIA QUERIES=====================*/
 @media (max-width: 64em){
+
   .form_table{
     max-width: 60%;
   }
@@ -192,6 +193,9 @@
 }
 
 @media (max-width: 55em){ /*880px*/
+  .bookingFooter{
+    position: relative;
+  }
   .postedFeedback{
     background: rgb(250,250,250);
     width: 80%;
@@ -200,6 +204,10 @@
 
   .postedFeedback form{
       display: inline-block;
+  }
+
+  .body-type{
+    width: 100%;
   }
 
   .myReplyButton{
@@ -279,9 +287,15 @@
   .footer_content3{
     border-right: none;
   }
+  .main_header{
+    margin: 1.5em 1.5em 0 1.5em;
+    line-height: 1.5em;
+  }
 }
 
 @media (max-width: 42.5em){
+
+
   .form_table{
     max-width: 100%;
     margin: 3em;
