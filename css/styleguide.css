@@ -5,6 +5,10 @@
   height: 1.85em;
   width: auto;
 }
+.center_logo{
+  width: auto;
+  margin: auto;
+}
 
 /* Sets the margin for each section*/
 .tables{
