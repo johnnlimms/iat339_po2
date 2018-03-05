@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--utf-8 character set for this HTML page-->
+    <meta charset="utf-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1">
+    <!--my page title-->
+    <title>Styleguide</title>
+    <!--stylesheets linked to this HTML page-->
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleguide_grids.css">
+  </head>
+
+  <body>
+
+    <div class ="main_header">
+      <img class = "logo" src="img/hyperloop_logo.png" alt ="Coast Logo">
+    </div>
+      <div class = "nav_container">
+        <div class = "nav-item">
+          <a href="styleguide.html">Non-Interactive Elements</a>
+        </div>
+        <div class = "nav-item">
+          <a class = "selected" href="#">Interactive Elements</a>
+        </div>
+        <div class = "nav-item">
+          <a href="styleguide3.html">Combined Elements</a>
+        </div>
+      </div>
+
+      <section class = "tables">
+        <h1 class ="section-title"> <!--section title-->
+          Buttons & Forms
+        </h1>
+        <div class = "button_container">
+          <div class = "button_elements1">
+            <div>
+              <form action="index.html">
+                <button class="submit" type="submit">SEARCH</button>
+              </form>
+              <!--Sample code-->
+              <h2 class ="section_labels">CSS Selectors</h2>
+              <code class = "sample_code">.submit</code>
+              <h2 class ="section_labels">Sample Code</h2>
+              <code class = "sample_code"> &lt;form action="#"&gt; &lt;button class="submit" type="submit"&gt;SEARCH&lt;/button&gt; &lt;/form&gt;</code>
+            </div>
+            <div>
+              <a class="purchase-button" href="#">$140.20</a>
+              <!--Sample code-->
+              <h2 class ="section_labels">CSS Selectors</h2>
+              <code class = "sample_code">.purchase-button</code>
+              <h2 class ="section_labels">Sample Code</h2>
+              <code class = "sample_code"> &lt;a class="purchase-button" href="#"&gt;$140.25&lt;/a&gt;</code>
+            </div>
+            <div>
+              <a class = "linkbutton" href ="#">Read More ></a>
+              <!--Sample code-->
+              <h2 class ="section_labels">CSS Selectors</h2>
+              <code class = "sample_code">.linkbutton</code>
+              <h2 class ="section_labels">Sample Code</h2>
+              <code class = "sample_code"> &lt;a class="linkbutton" href="#"&gt;Read More >&lt;/a&gt;</code>
+            </div>
+          </div>
+
+          <div class = "button_element2">
+            <!--THIS IS A COMBINED FORM ELEMENT-->
+            <div class="form">
+              <form><lable>First Name:</lable><input class="textinput" type="text" name="textinput"></form>
+              <form><lable>Last Name:</lable><input class="textinput" type="text" name="textinput"></form>
+            </div>
+            <h2 class ="section_labels">CSS Selectors</h2>
+            <code class = "sample_code">.form, .form form, .textinput, .textinput:focus, .textinput:hover</code>
+            <h2 class ="section_labels">Sample Code</h2>
+            <code class = "sample_code"> &lt;div class="form"&gt;&lt;form&gt;&lt;lable&gt;First Name:&lt;/lable&gt;&lt;input class="textinput" type="text" name="textinput"&gt;&lt;/form&gt;&lt;/div&gt;</code>
+
+            <div id="secondform">
+            <div class = "feedback_item">
+              <label class ="form_label">NAME</label>
+              <input class = "myTextfield" type="text" name="firstname" placeholder="Your Name">
+            </div>
+            <div class = "feedback_item">
+              <label class ="form_label">EMAIL ADDRESS</label>
+              <input class = "myTextfield" type="text" name="email" placeholder="Email Address">
+            </div>
+          </div>
+            <!--Sample Code-->
+            <h2 class ="section_labels">CSS Selectors</h2>
+            <code class = "sample_code">.feedback_item, .form_lable, .myTextfield, .myTextfield::placeholder</code>
+            <h2 class ="section_labels">Sample Code</h2>
+            <code class = "sample_code"> &lt;div class="feedback_item"&gt;&lt;lable class="form_label"&gt;NAME&lt;/lable&gt;&lt;input class="myTextfield" type="text" name="firstname" placeholder="Your Name"&gt;</code>
+          </div>
+        </div>
+      </section>
+
+    </body>
+  </html>

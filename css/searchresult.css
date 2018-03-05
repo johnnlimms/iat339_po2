@@ -211,6 +211,10 @@
   padding: 0.2em 0.4em 0.2em 0.4em;
   color: #9C74B8;
 }
+.purchase-button:hover, .purchase-button:focus{
+  color: #733A9C;
+  border: 0.09em solid #733A9C;
+}
 
 .search-button{
   letter-spacing: 0.15em;

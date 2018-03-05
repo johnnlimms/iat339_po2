@@ -62,46 +62,37 @@ header{
   padding-top: 2em;
   padding-bottom: 2em;
 }
-
 .myFooter i{
   padding-right: 1em;
 }
-
 .myFooter a{
   text-decoration: none;
   font-size: 0.9em;
   padding: 0.8em 0.8em 0.8em 0;
   color: #333333;
 }
-
 .myFooter a:hover{
   color: #777777;
 }
-
 .footer_container{
   width: 87%;
 }
 .footer_content4{
-
   padding-left: 4em;
   border-left: 0.5px solid #333333;
 }
-
 .footer_title{
   text-align: left;
   font-size: 1.1em;
   font-weight: 600;
   margin-bottom: 0.5em;
 }
-
 .last{
   margin-bottom: 1.5em;
 }
-
 .footer_icons{
   padding-left: 2em;
 }
-
 .footer_links{
   display: block;
   text-align: left;
@@ -112,7 +103,6 @@ header{
   color: #333333;
   padding: 1em;
 }
-
 .footer-items:hover{
   -webkit-transition: 0.2s ease-in;
   color: #999999;
@@ -570,15 +560,12 @@ input.mydropdown{
   background: rgb(250,250,250);
   padding: 3em;
 }
-
 .article_text{
   width: 40%;
 }
-
 .article_text p{
   margin-bottom: 2em;
 }
-
 .article_text .sub_header2{
   margin-bottom: 1em;
 }

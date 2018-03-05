@@ -41,7 +41,7 @@
 .article_container{
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .article_item1{
@@ -266,7 +266,6 @@
   .fa{
     margin-left: 1em;
   }
-
   .footer_content4{
     margin-top: 2em;
     margin-left: 0;
@@ -292,7 +291,12 @@
     max-width: 100%;
     margin: 3em;
   }
-
+  .myArticle{
+    width: 100%;
+  }
+  .article_text{
+    width: 87%;
+  }
   .articles{
     width:100%;
     padding: 0;
@@ -300,9 +304,6 @@
   }
   .article_image{
     width: 100%;
-  }
-  .article_text{
-    width: 80%;
   }
   .onenews{
     width: 100%;
@@ -331,13 +332,6 @@
   .myButton{
       position: static;
       margin: auto;
-  }
-
-  .myArticle{
-    width: 100%;
-  }
-  .article_text{
-    width: 87%;
   }
 }
 
