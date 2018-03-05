@@ -613,3 +613,9 @@ input.mydropdown{
   margin-top: 2em;
   width: 87%;
 }
+
+.droptitile{
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+}

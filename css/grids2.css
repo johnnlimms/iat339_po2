@@ -126,6 +126,12 @@
   flex: 1;
 }
 
+#hid-f, #hid-s, #hid-t{
+  display:block;
+}
+.droptitile{
+  display: none;
+}
 
 
 
@@ -360,4 +366,16 @@
     width:100%;
   }
 
+.droptitile{
+  display: block;
+}
+#hid-f, #hid-s, #hid-t{
+  display: none;
+}
+.footer_title{
+  display: none;
+}
+.footer_title.last{
+  display: block;
+}
 }
