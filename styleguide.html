@@ -9,24 +9,26 @@
     <!--stylesheets linked to this HTML page-->
     <link rel="stylesheet" href="css/styleguide.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/grids.css">
+    <link rel="stylesheet" href="css/styleguide_grids.css">
   </head>
 
   <!--START OF BODY-->
   <body>
 
     <div class ="main_header">
+      <a class="center_logo" href="index.html">
       <img class = "logo" src="img/hyperloop_logo.png" alt ="Coast Logo">
+    </a>
     </div>
       <div class = "nav_container">
         <div class = "nav-item">
           <a class = "selected" href="#">Non-Interactive Elements</a>
         </div>
         <div class = "nav-item">
-          <a href="#">Interactive Elements</a>
+          <a href="styleguide2.html">Interactive Elements</a>
         </div>
         <div class = "nav-item">
-          <a href="#">Combined Elements</a>
+          <a href="styleguide3.html">Combined Elements</a>
         </div>
       </div>
 
@@ -92,24 +94,15 @@
     </section> <!--end of Color Palette Section-->
 
 
-    <!--start of TYPOGRAPHY AND INTERACTIVE ELEMENTS section-->
+    <!--start of TYPOGRAPHYsection-->
     <section class = "tables">
-      <h1 class ="section-title"> <!--section title-->
-        Typography
-      </h1>
+      <h1 class ="section-title"> Typography</h1>
 
       <!--First section: Level of type hierarchy-->
       <div class="type_container">
         <div class = "type_element1">
           <h1 class = "main_header">HEADER</h1>
-
-          <!--Sample code-->
-
-            <!--<code class = "sample_code"> &lt;h1 class = "main_header"&gt; Header &lt;/h1&gt; || <strong>CSS Selector</strong> .main_header</code>-->
           <h2 class = "sub_header1">Subheader 1</h2>
-
-          <!--Sample code-->
-        <!--  <code class = "sample_code"> &lt;h2 class = "sub_header1"&gt; Subheader &lt;/h2&gt;  || <strong>CSS Selector</strong> .sub_header1</code>-->
           <h3 class = "sub_header2">Subheader 2</h3>
           <h4 class = "sub_header3">Subheader 3</h4>
           <h2 class ="section_labels">CSS Selectors</h2>
@@ -119,20 +112,17 @@
           <code class = "sample_code">&lt;h2 class="sub_header1"&gt;Subheader 1&lt;/h2&gt;</code>
           <code class = "sample_code">&lt;h3 class="sub_header2"&gt;Subheader 2&lt;/h3&gt;</code>
           <code class = "sample_code">&lt;h4 class="sub_header3"&gt;Subheader 3&lt;/h4&gt;</code>
-          <!--Sample code-->
-          <!--<code class = "sample_code"> &lt;h2 class = "sub_header2"&gt; Subheader 2&lt;/h2&gt; || <strong>CSS Selector</strong> .sub_header2</code>-->
+
         </div>
 
         <div class = "type_element2">
           <p class ="body-type">My paragraph look like this. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-          <!--<a href="#" class = "in-text">This is an in-text link.</a>-->
-          <!--Sample code-->
 
           <h2 class ="section_labels">CSS Selector</h2>
           <code class = "sample_code">.body-type, .in-text</code>
           <h2 class ="section_labels">Sample Code</h2>
           <code class = "sample_code"> &lt;p class="body-type"&gt;My paragraph look like this.&lt;/p&gt;</code>
-          <!--<code class = "sample_code"> &lt;a href="#" class="in-text"&gt;This is an in-text link.&lt;/a&gt;</code>-->
+
           <div>
             <ul class="bulleted_list">
               <li><span>Item1</span></li>
@@ -145,138 +135,6 @@
           </div>
         </div>
 
-      </div>
-    </section>
-    <!--end of TYPOGRAPHY AND INTERACTIVE ELEMENTS section-->
-
-    <!-- Navigation Menu for the Website  -->
-    <section class = "tables">
-      <h2 class ="section-title"> Navigation Menu </h2>
-      <section class="renderedNav">
-        <img class = "logo" src="img/hyperloop_logo.png" alt ="Coast Logo">
-        <div class = "nav_container">
-          <div class = "nav-item">
-            <a href="#">Menu 1</a>
-          </div>
-          <div class = "nav-item">
-            <a href="#">Menu 2</a>
-          </div>
-          <div class = "nav-item">
-            <a href="#">Menu 3</a>
-          </div>
-        </div>
-        <div class="icons">
-          <img class="icon" src="img/search.png" alt ="Search Icon">
-          <img class="icon" src="img/signin.png" alt ="Signin Icon">
-        </div>
-      </section>
-      <!--  Sample Code -->
-      <code class = "sample_code">&lt;div class = "nav_container"&gt;&lt;div class = "nav-item"&gt;&lt;a href ="index.html"&gt;Menu 1&lt;/a&gt;&lt;/div&gt;&lt;div class = "nav-item"&gt;&lt;a href ="index.html"&gt;Menu 2&lt;/a&gt;&lt;/div&gt;&lt;div class = "nav-item"&gt;&lt;a href ="index.html"&gt;Menu 3&lt;/a&gt;&lt;/div&gt;&lt;/div&gt; || <strong>CSS Selector</strong> .nav_container .nav-item</code>
-    </section>
-
-    <!--start of Interactive Elements section-->
-    <section class = "tables">
-      <h2 class ="section-title"> <!--section title-->
-        Interactive Elements
-      </h2>
-      <div class = "button_container">
-        <div class = "button_elements1">
-          <div>
-            <button class ="submit">Submit</button>
-            <!--Sample code-->
-            <code class = "sample_code"> &lt;button class = "proceed"&gt;Proceed&lt;/button&gt; || <strong>CSS Selector</strong> .proceed</code>
-          </div>
-          <div>
-            <button class ="cancel">Cancel</button>
-            <!--Sample code-->
-            <code class = "sample_code"> &lt;button class = "cancel"&gt;Cancel&lt;/button&gt; || <strong>CSS Selector</strong> .cancel</code>
-          </div>
-          <div>
-            <button class ="reset">Reset</button>
-            <!--Sample code-->
-            <code class = "sample_code"> &lt;button class = "reset"&gt;Reset&lt;/button&gt; || <strong>CSS Selector</strong> .reset</code>
-          </div>
-        </div>
-        <div class = "button_element2">
-          <!--THIS IS A COMBINED FORM ELEMENT-->
-          <h4 class = "form_label">First Name</h4>
-          <input type="text" class = "textfield" name = "firstname" placeholder="Type your FIRST name" >
-          <h4 class = "form_label">Last Name</h4>
-          <input type="text" class = "textfield" name = "lastname" placeholder="Type your LAST name" >
-          <h4 class = "form_label">Email Address</h4>
-          <input type="text" class = "textfield" name = "emailform" placeholder="Type in your email address" >
-          <div class = "control_buttons">
-            <button class ="submit">Submit</button>
-            <button class ="reset">Reset</button>
-          </div> <!--END OF THE COMBINED FORM ELEMENT-->
-          <!--Sample Code-->
-          <code class = "sample_code"> &lt;h4 class = "form_label"&gt;First Name&lt;/h4&gt; &lt;input type = "text" class = "textfield" name ="firstname" placeholder = "Type your FIRST name"&gt; &lt;div class = "control_buttons"&gt; &lt;button class ="submit" &gt; Submit &lt;/button&gt; &lt;button class ="reset" &gt; Reset &lt;/button&gt;|| <strong>CSS Selectors</strong> .form_label .textfield .control_buttons .submit .reset</code>
-        </div>
-      </div>
-    </section>
-    <!--end of interactive element sections-->
-    <!--start of Services offered section-->
-    <section class = "tables">
-      <h2 class ="section-title"> <!--section title-->
-        Services Offered
-      </h2>
-      <div class = "services_container">
-          <div class = "service1">
-            <img class = "service_img" src="img/book.png" alt = "Booking a Trip icon">
-            <h4 class="service_label"> Book a Trip </h4>
-          </div>
-          <div class = "service2">
-            <img class = "service_img" src="img/ticket.png" alt = "Buy a single ticket">
-            <h4 class="service_label"> Buy a Ticket for a Single Trip </h4>
-          </div>
-          <div class = "service3">
-            <img class = "service_img" src="img/reload.png" alt = "reload your card">
-            <h4 class="service_label"> Reload your Pass </h4>
-          </div>
-          <div class = "service4">
-            <img class = "service_img" src="img/map.png" alt = "View station's location">
-            <h4 class="service_label"> Find the Nearest Station </h4>
-          </div>
-          <div class = "service5">
-            <img class = "service_img" src="img/update.png" alt = "View Company Updates">
-            <h4 class="service_label"> View Company Updates or News</h4>
-          </div>
-      </div>
-    </section> <!--end of services section-->
-
-    <section class = "tables">
-      <h2 class = "section-title">
-        Website Grid
-      </h2>
-      <!-- Website Grid of 5 columns  -->
-      <div class = "grid_container">
-        <div class = "light_1of5">
-          <p> Grid 1 of 5 </p>
-        </div>
-        <div class = "dark_1of5">
-          <p> Grid 2 of 5  </p>
-        </div>
-        <div class = "light_1of5">
-          <p> Grid 3 of 5 </p>
-        </div>
-        <div class = "dark_1of5">
-          <p> Grid 4 of 5 </p>
-        </div>
-        <div class = "light_1of5">
-          <p> Grid 5 of 5 </p>
-        </div>
-      </div>
-      <!--  Website Grid of 3 columns -->
-      <div class = "grid_container">
-        <div class = "light_1of3">
-          <p> Grid 1 of 3 </p>
-        </div>
-        <div class = "dark_1of3">
-          <p> Grid 2 of 3</p>
-        </div>
-        <div class = "light_1of3">
-          <p> Grid 3 of 3</p>
-        </div>
       </div>
     </section>
 

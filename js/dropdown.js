@@ -4,7 +4,7 @@ function showFirst(){
 
 window.onclick = function(event){
   if(!event.target.matches('.button-show')){
-    var dropdowns = document.getElementByClassName("dropdown-hid");
+    var dropdowns = document.getElementById("hidden");
     var i;
     for(i=0; i<dropdowns.length;i++){
       var openDropdown = dropdowns[i];
@@ -21,7 +21,7 @@ function showSecond(){
 
 window.onclick = function(event){
   if(!event.target.matches('.button-show')){
-    var dropdowns = document.getElementByClassName("dropdown-hid");
+    var dropdowns = document.getElementById("hidden2");
     var i;
     for(i=0; i<dropdowns.length;i++){
       var openDropdown = dropdowns[i];

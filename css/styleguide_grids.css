@@ -1,0 +1,290 @@
+.main_header{
+  display: flex;
+  flex-grow: 1;
+}
+.nav_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nav-item{
+  order: 1;
+}
+
+
+.col_container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col_container div{
+  flex: 15em;
+}
+
+
+.type_container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+}
+.type_element1{
+  width: 45%;
+  margin: 1em;
+}
+.type_element2{
+  width: 45%;
+  margin: 1em;
+}
+
+
+.button_container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+}
+.button_elements1{
+  width: 45%;
+  margin: 1em;
+}
+.button_element2{
+  width: 45%;
+  margin: 1em;
+}
+#secondform{
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback_item{
+  width: 50%;
+}
+
+
+.renderedNav{
+  display: flex;
+}
+.navi_container{
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex: 10em;
+  align-items: center;
+}
+.logo_cont{
+  flex-grow: 1;
+  order: 1;
+}
+.nav-items{
+  flex-grow: 1;
+  order: 2;
+}
+
+
+.myFooter{
+  display: flex;
+}
+.footer_container{
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer_content1{
+  order: 1;
+}
+.footer_content2{
+  order: 2;
+}
+.footer_content3{
+  order: 3;
+}
+.footer_content4{
+  order: 4;
+}
+#hid-f, #hid-s, #hid-t{
+  display:block;
+}
+.droptitile{
+  display: none;
+}
+
+
+.article_container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.article_text{
+  flex: 15em;
+  flex-grow: 1;
+  order: 1;
+  position: relative;
+}
+#link{
+  display: block;
+  float: right;
+  margin-top: 0.5em;
+}
+
+
+@media (max-width:64em) {
+  .footer_container{
+    width: 95%;
+  }
+  .footer_content4{
+    padding-left: 1.5em;
+  }
+
+  .article_text .sub_header1{
+    margin-top: 1.5em;
+  }
+  .article_container{
+    display: block;
+  }
+  .articles{
+    width: 75%;
+    padding: 0;
+    padding-bottom: 3em;
+  }
+  .article_image{
+    width: 100%;
+  }
+  .article_thumbnail{
+    width: 100%;
+  }
+  .article_text{
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width:54em){
+  .progress-container{
+    display: none;
+  }
+  .progressbar-small{
+    display: block;
+  }
+  .progressbar-small h1{
+    font-size: 1.1em;
+    background: linear-gradient(#733A9C, #00AAE5);
+    background: -webkit-linear-gradient(#733A9C, #00AAE5);
+    background: -ms-linear-gradient(#733A9C, #00AAE5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width:55em){
+  .navi_container{
+    position: relative;
+    clear: left;
+    display: inline-block;
+  }
+  .navi_container a{
+    padding-top: 1em;
+    display: inline-block;
+  }
+  .logo_cont{
+    display: inline-block;
+  }
+
+  .footer_title.last{
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .fa{
+    margin-left: 1em;
+  }
+  .footer_content4{
+    margin-top: 2em;
+    margin-left: 0;
+    width: 100%;
+    border-left: none;
+    text-align: center;
+  }
+  .footer_content3{
+    border-right: none;
+  }
+  .footer_icons{
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width:51.3em){
+  .type_element1, .type_element2, .button_elements1, .button_element2{
+    width: 98%;
+  }
+
+  .sample_code{
+    width: 90%;
+}
+
+@media (max-width:42.5em){
+  .article_text{
+    width: 87%;
+  }
+  .articles{
+    width:100%;
+    padding: 0;
+    padding-bottom: 3em;
+  }
+}
+
+@media (max-width:36em){
+  .nav-item{
+    width: 90%;
+  }
+}
+@media (max-width: 31.25em){
+  .form{
+    margin-left: 0;
+  }
+  .form form{
+    width: 90%;
+  }
+  .feedback_item{
+    width: 100%;
+  }
+
+  .footer_title{
+    text-align: center;
+  }
+  .footer_container a{
+    text-align: center;
+    font-size: 1em;
+  }
+  .footer_content1{
+    margin-top: 1em;
+    text-align: center;
+    width:100%;
+  }
+  .footer_content2{
+    margin-top: 1em;
+    text-align: center;
+    width:100%;
+  }
+  .footer_content3{
+    margin-top: 1em;
+    text-align: center;
+    width:100%;
+  }
+  .droptitile{
+  display: block;
+}
+#hid-f, #hid-s, #hid-t{
+  display: none;
+}
+.footer_title{
+  display: none;
+}
+.footer_title.last{
+  display: block;
+} 
+}

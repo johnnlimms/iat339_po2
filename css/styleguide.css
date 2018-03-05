@@ -5,6 +5,10 @@
   height: 1.85em;
   width: auto;
 }
+.center_logo{
+  width: auto;
+  margin: auto;
+}
 
 /* Sets the margin for each section*/
 .tables{
@@ -65,11 +69,6 @@
   color: #FFFFFF;
 }
 
-/*Flexbox styling for the typography section*/
-.type_container div{
-  margin: 1em;
-}
-
 /*Font + Typography combination for the elements in typography section*/
 .main_header{
   margin: 0;
@@ -127,7 +126,7 @@
   font-size: 0.9em;
   color: #333;
   line-height: 1.8em;
-  width: 38em;
+  width: 82%;
 }
 
 
@@ -136,8 +135,10 @@
   color: #888888;
   display: inline-block;
   margin: 1em;
+  margin-left: 0;
   padding: 1em;
   background: #EDF1F7;
+  width: 90%;
 }
 
 .col_code{
@@ -161,128 +162,314 @@
 }
 
 
-.renderedNav{
-  background: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  width: 100%;
+/*Submit button styling*/
+.submit{
+  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  padding: 0.7em 1.3em 0.7em 1.3em;
+  background: linear-gradient(90deg, #9C74B8, #4AC2EA);
+  color: #FFF;
+  border-radius: 0.4em;
+  border: 1em transparent;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.submit:hover, .submit:focus{
+  background: linear-gradient(90deg, #4AC2EA, #9C74B8);
+  cursor: pointer;
+  outline: none;
 }
 
-.renderedNav .logo{
+.purchase-button{
+  display: inline-block;
+  margin-top: 1em;
+  text-decoration: none;
+  border: 0.09em solid #B28DCE;
+  border-radius: 0.4em;
+  background-color: transparent;
+  font-size: 1em;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  color: #9C74B8;
+}
+.purchase-button:hover, .purchase-button:focus{
+  color: #733A9C;
+  border: 0.09em solid #733A9C;
+}
+
+.linkbutton{
+  display: inline-block;
+  margin-top: 1em;
+  text-decoration: none;
+  color: #733A9C;
+}
+
+.linkbutton:hover,.linkbutton:focus {
+  color: #9C74B8;
+}
+
+/*Styling for the molecular div for forms and buttons*/
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.form form{
+  width: 50%;
+  order: 0;
+}
+.textinput{
+  display: block;
+  width: 90%;
+  height: 2.7em;
+  margin: 0.5em 0;
+  border: 1px solid #909090;
+  border-radius: 0.2em;
+  padding: 0.1em 0em 0em 0.5em;
+  font-size: 1em;
+}
+.textinput:focus{
+  border-bottom: 1px solid black;
+  outline: none;
+  background-color:#EDF1F7;
+  box-shadow: 0.03em 0.02em 0.05em #909090;
+}
+.textinput:hover{
+  background-color:#EDF1F7;
+  box-shadow: 0.03em 0.02em 0.05em #909090;
+}
+/*Styling for the form label/name*/
+.form_label{
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.feedback_item{
+  margin-top: 1em;
+}
+.myTextfield{
+  background: transparent;
+  border: 1px solid #eeeeee;
+  height: 3em;
+  width: 80%;
+  display: block;
+  padding-left: 1em;
+}
+.myTextfield{
+  margin-top: 1em;
+}
+.myTextfield::placeholder{
+  padding-left: 0.5em;
+  font-size: 1em;
+  color: #EEEEEE;
+}
+
+/*NAVIGATION*/
+.material-icons.purple600 {
+  color: #733A9C;
+}
+.renderedNav{
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.nav-items{
+  flex-grow: 1;
+  order: 2;
+}
+.navi_container{
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex: 10em;
+  padding: 1em;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 10px 2px rgba(30,30,30,0.1);
+}
+.logo_cont{
+  text-align: left;
+  flex-grow: 1;
+  order: 1;
+  min-width: 25%;
+}
+.navlogo{
   margin: 0 auto;
   max-width: 15em;
   width: 100%;
 }
-
-
-/*Submit button styling*/
-.submit{
-  margin-bottom: 0.6em;
-  display: inline;
-  font-size: 1em;
-  letter-spacing: 0.04em;
-  padding: 0.8em 1.7em 0.8em 1.7em;
-  font-weight:500;
-  background: linear-gradient(45deg, #9C74B8, #4AC2EA);
-  color: #FFF;
-  border: none;
-  border: 2px solid #fff;
-  border-radius: 0.4em; /*Makes the enclosing borders have rounded edges*/
+.nav-items a{
+  color: #333333;
+  line-height: 5em;
+  height: 3em;
+  text-decoration: none;
+}
+.nav-items a:hover{ /*puts a hover state on links on the navigation bar*/
+  border-bottom: 0.1em solid #333333;
+}
+.nav-items a:focus{ /*Focus state of the navigation bar links*/
+  border-bottom: 0.1em solid #333333;
 }
 
-.submit:hover{
-  background: transparent; /*Makes background transparent to match background element*/
-  color: #733A9C;
-  border: 2px solid #733A9C;
-}
 
-/*Reset button styling*/
-.reset{
-  background: transparent;
-  margin-bottom: 0.6em;
-  display: inline;
-  letter-spacing: 0.04em;
-  font-size: 1em;
-  padding: 0.2em 0.3em 0.2em 0.3em;
-  font-weight:500;
-  border: none;
-  color: #733A9C;
-  border-bottom: 2px solid #733A9C;
+/*FOOTER*/
+.myFooter{
+  background-color: #EDF1F7;
+  margin-top: 2em;
+  max-width: 100%;
+  font-size: 0.9em;
+  bottom: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
-
-/*Hover state for reset button*/
-.reset:hover{
-  background: transparent;
-  color: #9C74B8;
-  border-bottom: 2px solid #9C74B8;
+.myFooter i{
+  padding-right: 1em;
 }
-
-/*Cancel button*/
-.cancel{
-  background: transparent;
-  margin-bottom: 0.6em;
-  display: inline;
-  letter-spacing: 0.04em;
-  font-size: 1em;
-  padding: 0.7em 1.6em 0.7em 1.6em;
-  font-weight: 500;
-  color: #733A9C;
-  border: 2px solid #733A9C;
-  border-radius: 0.4em;
+.myFooter a{
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 0.8em 0.8em 0.8em 0;
+  color: #333333;
 }
-
-/*CAncel button hover state*/
-.cancel:hover{
-  background: transparent;
-  background: #FFFFFF;
-  color: #9C74B8;
-  border: 2px solid #9C74B8;
+.myFooter a:hover{
+  color: #777777;
 }
-
-/*Styling for the molecular div for forms and buttons*/
-.button_element2{
-  margin: 1em;
-  padding: 1em;
-  border: 2px solid #DDDDDD;
-  border-radius: 0.5em;
+.footer_container{
+  width: 87%;
 }
-
-/*Styling for the form label/name*/
-.form_label{
-  margin: 1em 0 0.5em 0;
+.footer_content4{
+  padding-left: 4em;
+  border-left: 0.5px solid #333333;
+}
+.footer_title{
+  text-align: left;
+  font-size: 1.1em;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  color: #733A9C;
+  margin-bottom: 0.5em;
 }
-
-
-/*Textfield styling*/
-.textfield{
-  width: 70%; /*Makes the textfield 70% of the div wide */
+.last{
+  margin-bottom: 1.5em;
+}
+.footer_icons{
+  padding-left: 2em;
+}
+.footer_links{
+  display: block;
+  text-align: left;
+}
+.footer-items{
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #333333;
   padding: 1em;
-  border: 1px solid #DDDDDD;
-  border-radius: 0.4em;
-  color: #0795C6;
+}
+.footer-items:hover{
+  -webkit-transition: 0.2s ease-in;
+  color: #999999;
+}
+.droptitile{
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+} 
+
+
+/*ARTICLE*/
+.sub_header1{
+  margin-bottom: 1em;
+  display: block;
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.body{
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.8em;
+}
+.articles{
+  max-width: 1150px;
+  margin: auto;
+  margin-top: 2em;
+  background: rgb(250,250,250);
+  padding: 3em;
+}
+.article_text{
+  width: 40%;
+}
+.article_text p{
+  margin-bottom: 2em;
+}
+.article_text .sub_header2{
+  margin-bottom: 1em;
+}
+.article_image{
+  width: 50%;
+  display: block;
+}
+.article_thumbnail{
+  width: 87%;
 }
 
-.textfield:focus{
-  outline: none;
-  border: 1px solid #733A9C;
+/*PROGRESS BAR*/
+.progress-container{
+  width: 45em;
+  margin: auto;
+  margin-top: 3em;
+}
+.progressbar li{
+  font-size: 0.9em;
+  color: #808080;
+  list-style: none;
+  display: inline-block;
+  width: 16%;
+  position: relative;
+  text-align: center;
+}
+.progressbar li:before{
+  content: "";
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  border-radius: 100%;
+  display:block;
+  text-align: center;
+  border: 2px solid #9C74B8;
+  background-color: #fff;
+  margin: 0 auto 0.4em auto;
+}
+.progressbar li:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #808080;
+  top:0.7em;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after{
+  content: none;
+}
+.progressbar li.active{
+  color:#9C74B8;
+}
+.progressbar li.active:before{
+  background-color: #9C74B8;
+}
+.progressbar li.active + li.active:after{
+  height: 2px;
+  background-color: #9C74B8;
+}
+.progressbar-small{
+  display: none;
+  margin-top: 2em;
 }
 
-
-
-.textfield::placeholder{
-  color: #DDDDDD;
-}
-
-
-/*Positions the molecular buttons in the molecular form*/
-.control_buttons{
-  margin: 1em 0 0 0;
-}
-.control_buttons .reset{
-  margin-left: 19.5em;
-}
 
 /*determines the icon sizes under the services table*/
 .service_img{

@@ -63,7 +63,7 @@
             <h2 class ="sub_header2">ABOUT VIRGIN GROUP</h2>
             <p class ="body-type">Virgin is a leading international investment group and one of the world's most recognised and respected brands. Conceived in 1970 by Sir Richard Branson, the Virgin Group has gone on to grow successful businesses in sectors including mobile telephony, travel & transportation, financial services, leisure & entertainment and health & wellness.</p>
           </div>
-          <div class = "article_text">
+          <div class = "article_text" id="margin-left">
               <h2 class ="sub_header2">CLEANLINESS AND EFFICIENCY</h2>
             <p class = "body-type">With Hyperloop One, passengers and cargo are loaded into a pod, and accelerate gradually via electric propulsion through a low-pressure tube. The pod quickly lifts above the track using magnetic levitation and glides at airline speeds for long distances due to ultra-low aerodynamic drag. Hyperloop One’s radically efficient and clean, all-electric technology is aligned with the Virgin Group’s purpose-driven mission to deliver more sustainable modes of transportation.</p>
           </div>
@@ -109,20 +109,29 @@
           <div class = "footer_container">
             <div class ="footer_content1">
               <h3 class ="footer_title">About Us</h3>
+              <a class="droptitile" onclick="openFirstMenu();">About Us ></a>
+              <div id="hid-f">
               <a class ="footer_links" href ="aboutus.html">About the Company</a>
               <a class ="footer_links" href ="updates.html">Station Information</a>
             </div>
+            </div>
             <div class ="footer_content2">
               <h3 class ="footer_title">Help &amp; Info</h3>
+              <a class="droptitile" onclick="openSecondMenu();">Help &amp; Info ></a>
+              <div id="hid-s">
               <a class ="footer_links" href ="aboutus.html">FAQ</a>
               <a class ="footer_links" href ="aboutus.html">Contact Us</a>
               <a class ="footer_links" href ="aboutus.html">Service Feedback</a>
+              </div>
             </div>
             <div class = "footer_content3">
               <h3 class ="footer_title">Project Links</h3>
+              <a class="droptitile" onclick="openThirdMenu();">Project Links ></a>
+              <div id="hid-t">
               <a class ="footer_links" href ="styleguide.html">Styleguide</a>
               <a class ="footer_links" href ="citations.htmls">Citations</a>
               <a class ="footer_links" href ="https://github.com/johnnlimms/iat339_po2">Github</a>
+            </div>
             </div>
             <div class = "footer_content4">
               <h3 class ="footer_title last"> Check Us Out on Social Media!</h3>
@@ -135,4 +144,7 @@
           </div>
         </div>
       </footer>
+
+      <script src="js/footermenu.js" type="text/javascript"></script>
+    </body>
 </html>

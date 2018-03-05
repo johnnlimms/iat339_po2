@@ -3,33 +3,10 @@
   padding: 0;
 }
 
-.nav-header{
-  width: 82%;
-  margin: auto;
-  display: flex;
-  -webkit-display:flex;
-  -ms-display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap:flex;
-  -ms-flex-wrap: flex;
-
-  align-items: baseline;
-  margin-top: 1em;
-  margin-bottom: 3em;
-  position: relative;
-  justify-content: space-between;
-}
-
-
-.nav-image-signin{
-  height: 1.3em;
-  width: auto;
-  padding-bottom: 0.3em;
-}
-
 .progress-container{
   width: 45em;
   margin: auto;
+  margin-top: 3em;
 }
 .progressbar li{
   font-size: 0.9em;
@@ -78,6 +55,7 @@
 
 .progressbar-small{
   display: none;
+  margin-top: 2em;
 }
 
 #colorblock{
@@ -232,6 +210,10 @@
   font-size: 1em;
   padding: 0.2em 0.4em 0.2em 0.4em;
   color: #9C74B8;
+}
+.purchase-button:hover, .purchase-button:focus{
+  color: #733A9C;
+  border: 0.09em solid #733A9C;
 }
 
 .search-button{

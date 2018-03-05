@@ -7,6 +7,9 @@ html{
   color: #333;
   line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%
 }
+*{
+  letter-spacing: 0.04em;
+}
 body{margin:0}
 
 article,aside,footer,header,nav,section{display:block}
