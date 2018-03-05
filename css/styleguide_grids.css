@@ -104,6 +104,12 @@
 .footer_content4{
   order: 4;
 }
+#hid-f, #hid-s, #hid-t{
+  display:block;
+}
+.droptitile{
+  display: none;
+}
 
 
 .article_container{
@@ -269,4 +275,16 @@
     text-align: center;
     width:100%;
   }
+  .droptitile{
+  display: block;
+}
+#hid-f, #hid-s, #hid-t{
+  display: none;
+}
+.footer_title{
+  display: none;
+}
+.footer_title.last{
+  display: block;
+} 
 }

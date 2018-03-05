@@ -370,6 +370,11 @@
   -webkit-transition: 0.2s ease-in;
   color: #999999;
 }
+.droptitile{
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+} 
 
 
 /*ARTICLE*/
