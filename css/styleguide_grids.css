@@ -117,7 +117,7 @@
   order: 1;
   position: relative;
 }
-.linkbutton{
+#link{
   display: block;
   float: right;
   margin-top: 0.5em;
