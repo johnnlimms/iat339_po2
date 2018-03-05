@@ -65,11 +65,6 @@
   color: #FFFFFF;
 }
 
-/*Flexbox styling for the typography section*/
-.type_container div{
-  margin: 1em;
-}
-
 /*Font + Typography combination for the elements in typography section*/
 .main_header{
   margin: 0;
@@ -127,7 +122,7 @@
   font-size: 0.9em;
   color: #333;
   line-height: 1.8em;
-  width: 38em;
+  width: 82%;
 }
 
 
@@ -136,8 +131,10 @@
   color: #888888;
   display: inline-block;
   margin: 1em;
+  margin-left: 0;
   padding: 1em;
   background: #EDF1F7;
+  width: 90%;
 }
 
 .col_code{
