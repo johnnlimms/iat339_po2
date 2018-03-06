@@ -204,6 +204,12 @@
 }
 
 @media (max-width: 55em){ /*880px*/
+
+  .reply_button{
+    margin-top: 3em;
+    margin-left: 80%;
+  }
+
   .bookingFooter{
     position: relative;
   }
