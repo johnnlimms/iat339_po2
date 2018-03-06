@@ -7,6 +7,12 @@ html{ /*Prevents the content from shifting to the right by having the scroll bar
   overflow:scroll;
 }
 
+/*Changes the font family of the whole document*/
+body{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
 header{
   background: rgba(255, 255, 255, 0.7);
   position: relative;
@@ -52,10 +58,14 @@ header{
   border-bottom: 0.1em solid #333333;
 }
 
+.bookingFooter{
+  position: absolute;
+  bottom: 0;
+}
 
 .myFooter{
+  width: 100%;
   background-color: #EDF1F7;
-  margin-top: 2em;
   max-width: 100%;
   font-size: 0.9em;
   bottom: 0;
@@ -108,6 +118,10 @@ header{
   color: #999999;
 }
 
+.optional{
+  color: #888888;
+  font-size: 0.7em;
+}
 
 .button_element2{
   margin: 1em;
@@ -231,44 +245,10 @@ header{
   background-size: cover;
 }
 
-/* .myDatePicker{
-  margin-left: 5%;
-  max-width: 100%;
-  font-size: 1.2em;
+.last{
+  margin-bottom: 1em;
 }
 
-
-.myDatePicker label{
-  display: block;
-} */
-
-
-/* .myDatePicker #returning{
-  width: 100%;
-  display: block;
-  height: 2.4em;
-  text-align: center;
-  margin: 0.3em 0 0.5em 0;
-  border-weight: 0px;
-  font-weight: 300;
-  letter-spacing: 0.02em;
-  color: #733A9C;
-  background: white;
-}
-
-.myDatePicker input{
-  background: white;
-  width: 100%;
-  display: block;
-  height: 2em;
-  text-align: center;
-  margin: 0.3em 0 0.5em 0;
-  border: 2px solid #DDDDDD;
-  border-radius: 5px;
-  font-weight: 300;
-  letter-spacing: 0.02em;
-  color: #733A9C;
-} */
 
 /*Submit button styling*/
 .submit{
