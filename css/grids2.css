@@ -205,9 +205,8 @@
 
 @media (max-width: 55em){ /*880px*/
 
-  .reply_button{
-    margin-top: 3em;
-    margin-left: 80%;
+  form .reply_button{
+    margin-left: 50%;
   }
 
   .bookingFooter{
@@ -220,7 +219,8 @@
   }
 
   .postedFeedback form{
-      display: inline-block;
+      display: block;
+      margin: 1em 0em 2em 0;
   }
 
   .body-type{
