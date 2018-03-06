@@ -192,7 +192,23 @@ header{
   float: right;
   right: 0;
   margin-left: 5em;
+  color: #333;
 }
+
+.reply_button:hover{
+  color: #888;
+}
+
+.footer_icons i{
+  color: #333;
+}
+
+.footer_icons i:hover{
+  color: #888;
+}
+
+
+
 
 .postedFeedback form{
     display: inline-block;
@@ -201,22 +217,7 @@ header{
 .recentFeedback{
   margin-top: 1em;
 }
-.myReplyButton{
-  letter-spacing: 0.15em;
-  font-size: 0.75em;
-  padding: 0.7em 1.3em 0.7em 1.3em;
-  background: linear-gradient(90deg, #9C74B8, #4AC2EA);
-  color: #FFF;
-  border: 0px solid #fff;
-  border-radius: 0.4em;
-  margin-left: 5em;
-}
 
-.myReplyButton:hover, .myReplyButton:focus{
-  background: linear-gradient(90deg, #4AC2EA, #9C74B8);
-  cursor: pointer;
-  outline: none;
-}
 
 .postName{
   font-size: 0.8em;
