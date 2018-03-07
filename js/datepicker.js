@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $( "#departing" ).datepicker();
   $( "#returning" ).datepicker();
-  $("button").click(function() {
+  $(".myButton").click(function() {
     var departing = $("#departing").val();
     var returning = $("#returning").val();
     if (departing === "" && returning === "") {

@@ -49,12 +49,27 @@ header{
   text-decoration: none;
 }
 
+.nav-item2 a{
+  color: #333333;
+  line-height: 5em;
+  height: 3em;
+  text-decoration: none;
+}
+
 
 .nav-item a:hover{ /*puts a hover state on links on the navigation bar*/
   border-bottom: 0.1em solid #333333;
 }
 
+.nav-item2 a:hover{ /*puts a hover state on links on the navigation bar*/
+  border-bottom: 0.1em solid #333333;
+}
+
 .nav-item a:focus{ /*Focus state of the navigation bar links*/
+  border-bottom: 0.1em solid #333333;
+}
+
+.nav-item2 a:focus{ /*Focus state of the navigation bar links*/
   border-bottom: 0.1em solid #333333;
 }
 
