@@ -133,6 +133,13 @@
   display: none;
 }
 
+button .accordion{
+  display: none;
+}
+
+.myMenuItems{
+  display: none;
+}
 
 
 /*=====================MEDIA QUERIES=====================*/
@@ -205,6 +212,46 @@
 
 @media (max-width: 55em){ /*880px*/
 
+  .nav-item{
+    display: none;
+  }
+
+  .accordion {
+    flex-grow: 1;
+    order: 2;
+    max-width: 50%;
+    /* margin-top: 1em; */
+    font-size: 1.2em;
+    font-style: bold;
+    text-align: right;
+    display: block;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active{
+        border-bottom: 2px solid #ddd;
+  }
+
+
+  .active, .accordion:hover {
+    background-color: #fff;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .myMenuItems {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+  }
+
   form .reply_button{
     margin-left: 50%;
   }
@@ -269,6 +316,7 @@
     position: relative;
     clear: left;
     display: inline-block;
+    align-items: flex-end;
   }
 
   .nav_container a{
@@ -277,8 +325,10 @@
   }
 
   .logo_cont{
+    max-width: 50%;
     display: inline-block;
   }
+
 
   .footer_title.last{
     text-align: center;
@@ -360,6 +410,15 @@
       position: static;
       margin: auto;
   }
+}
+
+@media (max-width: 33.5em) {
+
+  .accordion{
+    margin-top: 1em;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 31.25em){
