@@ -541,7 +541,7 @@ input.mydropdown{
 .newstitle{
   font-size: 1.1em;
   font-weight: 600;
-  background-color: #4CBFE8c8;
+  background-color: rgba(76, 191, 232, 0.8);
   color: #fff;
   margin: 0;
   position: absolute;
