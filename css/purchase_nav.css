@@ -63,6 +63,11 @@ header{
 }
 
  @media (max-width: 55em){
+
+.alone{
+  margin-left: 0;
+}
+
 .nav_container{
   position: relative;
   clear: left;
@@ -75,5 +80,4 @@ header{
 }
 .logo_cont{
   display: inline-block;
-}
 }

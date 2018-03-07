@@ -9,9 +9,9 @@
     </title>
     <!--stylesheets linked to this HTML page-->
     <link rel="stylesheet" href="css/normalize.css">
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/grids2.css">
+    <link rel="stylesheet" href="css/hamburger.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,6 +27,26 @@
               <img class = "logo" src="img/hyperloop_logo.png" alt ="Coast Logo">
             </a>
           </div>
+          <!-- <button class="accordion">MENU</button> -->
+          <button class="accordion hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class = "myMenuItems">
+            <div class = "nav-item2">
+              <a href="allbookings.html">MY BOOKINGS</a>
+            </div>
+            <div class = "nav-item2">
+              <a href="updates.html">PRESS RELEASES</a>
+            </div>
+            <div class = "nav-item2">
+              <a href="aboutus.html">ABOUT US</a>
+            </div>
+            <div class ="nav-item2">
+              <a href ="allbookings.html"><i class="material-icons purple600">person_outline</i></a>
+            </div>
+          </div>
           <div class = "nav-item">
             <a href="allbookings.html">MY BOOKINGS</a>
           </div>
@@ -34,9 +54,8 @@
             <a href="updates.html">PRESS RELEASES</a>
           </div>
           <div class = "nav-item">
-            <a class = "selected" href="aboutus.html">ABOUT US</a>
+            <a href="aboutus.html">ABOUT US</a>
           </div>
-
           <div class ="nav-item">
             <a href ="allbookings.html"><i class="material-icons purple600">person_outline</i></a>
           </div>
@@ -72,7 +91,7 @@
         </div>
         <div class = "feedback_container">
           <label class ="form_label">YOUR MESSAGE</label>
-            <textarea class = "myTextfield myTextArea" type="text" name="firstname"></textarea>
+            <textarea class = "myTextfield myTextArea" name="firstname"></textarea>
             <form action="contact_provided.html">
               <button class="myPostButton" type="submit">SEND</button>
             </form>
